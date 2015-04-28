@@ -61,8 +61,25 @@ class ProductsController < ApplicationController
     end
   end
 
+  def who_bought
+    @all_orders = Order.all
+    #@product = Product.find(params[:id])
+    #@latest_order = @product.orders.order(:updated_at).last
+      respond_to do |format|
+        format.html
+
+    end
+  end
+
+  #def all_orders
+   # @all_orders = Order.all
+    #respond_to do |format|
+     # format.html
+    #end
+  #end
+
   private
-    # Use callbacks to share common setup or constraints between actions.
+  # Use callbacks to share common setup or constraints between actions.
     def set_product
       @product = Product.find(params[:id])
     end

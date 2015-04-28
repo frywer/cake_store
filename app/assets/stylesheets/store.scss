@@ -12,19 +12,29 @@
   }
 
   /* Запись в каталоге store */
-  .entry{
+  .entry {
     overflow: auto;
     margin-top: 1em;
     border-bottom: 1px dotted #77d;
-    min-height: 100px;
+    min-height: 200px;
+
+
+
+
+    .leftimg {
+      float: left;
+      margin: 7px 7px 7px 0;
+    }
+
     img
     {
-      width: 80px;
+      width: 200px;
       margin-right: 5px;
       margin-bottom: 5px;
-      position: absolute;
+      position: relative ;
     }
-    h3 {
+    h3{
+      float: top;
       font-size: 120%;
       font-family: sans-serif;
       margin-left: 100px;
@@ -33,7 +43,8 @@
       color: #227;
     }
     p, div.price_line {
-      margin-left: 100px;
+
+      margin-left: 150px;
       margin-top: 0.5em;
       margin-bottom: 0.8em;
 
@@ -47,4 +58,9 @@
       margin-right: 3em;
     }
   }
+  //.entry:hover {
+   // background-opaciry: rgba(193, 252, 255, 0.54);
+
+
+
 }

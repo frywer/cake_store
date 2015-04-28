@@ -1,0 +1,26 @@
+
+<%@all_orders.each do |order|%>
+    <div>
+<h3><%= link_to "Заказ No: #{order.id}", order_path(order.id) %></h3>
+<table border="1">
+  <tr>
+    <th>Продукт</th>
+    <th>Количество</th>
+    <th>Цена</th>
+  </tr>
+  <tr>
+    <% order.line_items.each do |item| %>
+    <th><%=link_to item.product.title, product_path(item.product.id)%></th>
+    <th><%=item.quantity%></th>
+    <th><%=item.total_price%></th>
+  </tr>
+    <%end%>
+  <tr>
+    <th></th>
+    <th>Total</th>
+    <th><%=order.line_items.map(&:total_price).sum %></th>
+  </tr>
+    </table>
+      <p>Способ оплаты: <%=order.pay_type%> </p>
+    </div>
+<%end%>

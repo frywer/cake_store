@@ -15,11 +15,11 @@
  */
 
 #banner {
-    background: #9c9;
+    background: rgba(125, 216, 255, 0.58);
     padding: 10px;
     border-bottom: 2px solid;
     font: small-caps 40px/40px "Times New Roman", serif;
-    color: #282;
+    color: rgba(247, 86, 47, 0.89);
     text-align: center;
 
     img {
@@ -27,7 +27,7 @@
 }
 
 #notice {
-  color: #000 !important;
+  color: rgba(247, 86, 47, 0.15) !important;
   border: 2px solid red;
   padding: 1em;
   margin-bottom: 2em;
@@ -36,17 +36,19 @@
 }
 
 #columns {
-  background: #141;
+  background: #7dd8ff;
+
   #main {
     margin-left: 17em;
     padding: 1em;
-    background: white;
+    background: #ffffff;
+
   }
   #side {
     float: left;
     padding: 1em 2em;
     width: 13em;
-    background: #141;
+    background: #7dd8ff;
 
     form, div {
       display: inline;
@@ -70,10 +72,40 @@
         list-style: none;
 
         a {
-          color: #bfb;
+          color: #f7562f;
           font-size: small;
         }
       }
+    }
+  }
+}
+.depot_form {
+  fieldset {
+    background: #efe;
+    legend {
+      color: #dfd;
+      background: #141;
+      font-family: sans-serif;
+      padding: 0.2em 1em;
+    }
+  }
+  form {
+    label {
+      width: 5em;
+      float: left;
+      text-align: right;
+      padding-top: 0.2em;
+      margin-right: 0.1em;
+      display: block;
+    }
+    select, textarea, input {
+      margin-left: 0.5em;
+    }
+    .submit {
+      margin-left: 4em;
+    }
+    br {
+      display: none
     }
   }
 }
