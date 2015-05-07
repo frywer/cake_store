@@ -17,13 +17,39 @@
 #banner {
   border-radius: 10px;
     background: rgba(125, 216, 255, 0.58);
-    margin: 0px auto;
-    min-height: 150px;
-    width: 960px;
+    min-height: 200px;
+    width: 900px;
+    margin: auto;
     position: relative;
 
+  #header_menu {
+    position: absolute;
+    right: 1%;
+    left: 1%;
+    bottom: 1px;
 
-}
+  }
+  }
+
+    .knopki{
+      opacity: 0.5;
+      text-decoration: none;
+      color: white;
+      display: inline;
+      font-size: 14px;
+      padding:20px 0px 0px 60px ;
+      width: 180px;
+      line-height: 50px;
+      border-right-style: solid ;
+      border-right-color: #222266;
+
+
+    }
+
+
+
+
+
 
 #notice {
   color: rgba(247, 86, 47, 0.15) !important;
@@ -48,11 +74,19 @@
     border-radius: 15px 15px 0px 0px;
     position: fixed;
     float: left;
-    padding: 1em 2em;
+    padding: 1em 1em;
     height: 100%;
     width: 11em;
     background: #7dd8ff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 
+    .kategory{
+      border: dotted 1px;
+      height: 20px;
+      width: 100%;
+
+
+    }
     form, div {
       display: inline;
     }
