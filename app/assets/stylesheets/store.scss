@@ -18,49 +18,41 @@
   /* Запись в каталоге store */
   .entry {
     overflow: auto;
-    margin-top: 1em;
-    border-bottom: 1px dotted #77d;
-    min-height: 200px;
-
-
+    margin: 5px 10px 50px 0px  ;
+    max-height: 400px;
+    max-width: 230px;
+    float: left;
 
 
     .leftimg {
       float: left;
       margin: 7px 7px 7px 0;
     }
+    .descript {
+      position: relative;
+      float: left;
+    }
 
+    .price_container{
+      position: relative;
+      float: left;
+    }
+
+
+    h3{
+      float: left;
+      font-size: 120%;
+      font-family: sans-serif;
+    }
     img
     {
-      width: 200px;
+      width: 225px;
       margin-right: 5px;
       margin-bottom: 5px;
       position: relative ;
     }
-    h3{
-      float: top;
-      font-size: 120%;
-      font-family: sans-serif;
-      margin-left: 100px;
-      margin-top: 0;
-      margin-bottom: 2px;
-      color: #227;
-    }
-    p, div.price_line {
 
-      margin-left: 150px;
-      margin-top: 0.5em;
-      margin-bottom: 0.8em;
 
-      form, div {
-        display: inline;
-      }
-    }
-    .price {
-      color: #44a;
-      font-weight: bold;
-      margin-right: 3em;
-    }
   }
   //.entry:hover {
    // background-opaciry: rgba(193, 252, 255, 0.54);

@@ -12,12 +12,12 @@
    <% @products.each do |product| %>
         <%cache ['entry', product] do %>
          <div class="entry">
+           <h3><%=link_to product.title , product_path(product.id)  %></h3>
                <p class="leftimg"> <%= image_tag(product.image_url) %></p>
-          <h3><%= product.title %></h3>
-          <%= sanitize(product.description) %>
-          <div class="price_line">
-          <span class="price"><%= number_to_currency(product.price) %></span>
-            <%= button_to 'В Корзину', line_items_path(product_id: product), remote: true %>
+           <div class="descript"><%= truncate(strip_tags(product.description), length: 30)%></div>
+          <div class="price_container">
+          <span ><%= number_to_currency(product.price) %></span>
+            <%= button_to 'В Корзину', line_items_path(product_id: product), remote: true, :class => "button tiny" %>
       </div>
     </div>
         <% end %>
