@@ -12,39 +12,29 @@
  *
  *= require_tree .
  *= require_self
+ //= require foundation_and_overrides
+
  */
 
 #banner {
-  border-radius: 10px;
-    background: rgba(125, 216, 255, 0.58);
-    min-height: 200px;
-    width: 900px;
+
+    background: rgba(108, 226, 235, 0.92);
     margin: auto;
-    position: relative;
 
-  #header_menu {
+  min-height: 50px;
+
+  #logo_img {
+
     position: absolute;
-    right: 1%;
-    left: 1%;
-    bottom: 1px;
+    max-width: 200px;
+    padding: 0px 0px 0px 20px;
 
   }
+}
+  #polosa {
+    min-height: 10px;
   }
 
-    .knopki{
-      opacity: 0.5;
-      text-decoration: none;
-      color: white;
-      display: inline;
-      font-size: 14px;
-      padding:20px 0px 0px 60px ;
-      width: 180px;
-      line-height: 50px;
-      border-right-style: solid ;
-      border-right-color: #222266;
-
-
-    }
 
 
 
@@ -61,23 +51,23 @@
 }
 
 #columns {
-  margin: 20px 80px 0px 80px;
+  margin: 100px 80px 0px 80px;
 
 
   #main {
     margin-left: 17em;
     padding: 1em;
-    background: #ffffff;
+
 
   }
   #side {
-    border-radius: 15px 15px 0px 0px;
+
     position: fixed;
     float: left;
     padding: 1em 1em;
     height: 100%;
-    width: 11em;
-    background: #7dd8ff;
+    width: 16em;
+    background: #6ce2eb;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 
     .kategory{
