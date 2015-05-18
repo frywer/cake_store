@@ -23,15 +23,16 @@
 
   min-height: 50px;
 
-  #logo_img {
-
-    position: absolute;
-    max-width: 200px;
-    padding: 0px 0px 0px 20px;
-
-  }
 }
-  #polosa {
+#logo_img {
+
+  //position: absolute;
+  max-width: 200px;
+  max-height: 100px;
+  padding: 0px 0px 0px 20px;
+
+}
+#polosa {
     min-height: 10px;
   }
 
@@ -51,7 +52,7 @@
 }
 
 #columns {
-  margin: 100px 80px 0px 80px;
+  margin: 30px 80px 0px 80px;
 
 
   #main {
@@ -63,20 +64,13 @@
   #side {
 
     position: fixed;
+    margin-top: 80px;
     float: left;
-    padding: 1em 1em;
     height: 100%;
     width: 16em;
-    background: #6ce2eb;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background: #6b727b;
+    box-shadow: 0 0 10px rgba(21, 40, 46, 0.89);
 
-    .kategory{
-      border: dotted 1px;
-      height: 20px;
-      width: 100%;
-
-
-    }
     form, div {
       display: inline;
     }
@@ -84,6 +78,7 @@
     input {
       font-size: small;
     }
+
     #cart {
       font-size: smaller;
       color: white;
@@ -93,17 +88,9 @@
         margin-bottom: 10px;
       }
     }
-    ul {
-      padding: 0;
-      li {
-        list-style: none;
 
-        a {
-          color: #f7562f;
-          font-size: small;
-        }
-      }
-    }
+
+
   }
 }
 .depot_form {

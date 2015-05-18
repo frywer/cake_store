@@ -15,18 +15,19 @@
      <%= render :partial => 'store/header'%>
    </div>
 
+
  <div id="columns">
    <div id="side">
-     <h3 class="kategory">Категории</h3>
-     <ul>
-       <li><%= link_to "Home", store_index_path%></li>
-       <li><a href="http://www..../faq">Questions</a></li>
-       <li><a href="http://www..../news">News</a></li>
-       <li><a href="http://www..../contact">Contact</a></li>
+     <h3>Категории</h3>
+     <ul class="side-nav">
+       <li role="menuitem"><%= link_to "Home", store_path%></li>
+       <li role="menuitem"><%= link_to 'Orders', orders_path %></li>
+       <li role="menuitem"><a href="http://www..../news">News</a></li>
+       <li role="menuitem"><a href="http://www..../contact">Contact</a></li>
      </ul>
 
      <% if session[:user_id] %>
-         <ul>
+         <ul class="side-nav">
            <li><%= link_to 'Orders', orders_path %></li>
            <li><%= link_to 'Products', products_path %></li>
            <li><%= link_to 'Users', users_path %></li>
