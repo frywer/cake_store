@@ -28,6 +28,10 @@
       float: left;
       margin: 7px 7px 7px 0;
     }
+    .leftimg:hover {
+      //background: red;
+      box-shadow: 0px 0px 5px 0px   ;
+    }
     .descript {
       position: relative;
       float: left;
@@ -51,6 +55,7 @@
       margin-bottom: 5px;
       position: relative ;
     }
+
 
 
   }
