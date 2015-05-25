@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Gallery name:</strong>
+  <%= @gallery.name %>
+</p>
+
+<h1>Listing Paintings</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Gallery</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+      <% for painting in @gallery.paintings %>
+      <tr>
+        <td><%= painting.name %></td>
+        <td><%= painting.gallery.name %></td>
+        <td><%= link_to 'Show', painting %></td>
+        <td><%= link_to 'Destroy', painting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Painting', new_painting_path %>
+
+<%= link_to 'Edit gallery', edit_gallery_path(@gallery) %> |
+<%= link_to 'Back', galleries_path %>
