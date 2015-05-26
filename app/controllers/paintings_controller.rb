@@ -56,7 +56,7 @@ class PaintingsController < ApplicationController
   def destroy
     @painting.destroy
     respond_to do |format|
-      format.html { redirect_to paintings_url, notice: 'Painting was successfully destroyed.' }
+      format.html { redirect_to @painting.gallery, notice: 'Painting was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -69,6 +69,6 @@ class PaintingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def painting_params
-      params.require(:painting).permit(:name, :gallery_id)
+      params.require(:painting).permit(:name, :gallery_id, :image, :remote_image_url)
     end
 end

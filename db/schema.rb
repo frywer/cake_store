@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150525225624) do
+ActiveRecord::Schema.define(version: 20150526000737) do
 
   create_table "carts", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(version: 20150525225624) do
     t.integer  "gallery_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "image"
   end
 
   add_index "paintings", ["gallery_id"], name: "index_paintings_on_gallery_id"

@@ -7,30 +7,27 @@
 
 <h1>Listing Paintings</h1>
 
-<table>
-  <thead>
-  <tr>
-    <th>Name</th>
-    <th>Gallery</th>
-    <th colspan="3"></th>
-  </tr>
-  </thead>
-
-  <tbody>
-      <% for painting in @gallery.paintings %>
-      <tr>
-        <td><%= painting.name %></td>
-        <td><%= painting.gallery.name %></td>
-        <td><%= link_to 'Show', painting %></td>
-        <td><%= link_to 'Destroy', painting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+<div id="paintings">
+  <% for painting in @gallery.paintings %>
+      <div class="painting">
+        <%= image_tag painting.image_url(:thumb).to_s %>
+        <div class="name"><%= painting.name %></div>
+        <div class="actions">
+          <%= link_to "edit", edit_painting_path(painting) %> |
+          <%= link_to "remove", painting, :confirm => 'Are you sure?', :method => :delete %>
+        </div>
+      </div>
   <% end %>
-  </tbody>
-</table>
+  <div class="clear"></div>
+</div>
+
+<p>
+  <%= link_to "Add a Painting", new_painting_path(:gallery_id => @gallery) %>
+</p>
 
 <br>
 
-<%= link_to 'New Painting', new_painting_path %>
+
 
 <%= link_to 'Edit gallery', edit_gallery_path(@gallery) %> |
 <%= link_to 'Back', galleries_path %>
