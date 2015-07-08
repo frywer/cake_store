@@ -1,3 +1,3 @@
 class Gallery < ActiveRecord::Base
-  has_many :paintings, dependent: :destroy
+  has_many :paintings
 end

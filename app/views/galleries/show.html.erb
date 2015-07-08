@@ -5,27 +5,25 @@
   <%= @gallery.name %>
 </p>
 
-<h1>Listing Paintings</h1>
-
-<div id="paintings">
   <% for painting in @gallery.paintings %>
+    <div class="gallery">
       <div class="painting">
-        <%= image_tag painting.image_url(:thumb).to_s %>
-        <div class="name"><%= painting.name %></div>
-        <div class="actions">
-          <%= link_to "edit", edit_painting_path(painting) %> |
-          <%= link_to "remove", painting, :confirm => 'Are you sure?', :method => :delete %>
-        </div>
+        <%= image_tag painting.image_url(:thumb) if painting.image? %>
       </div>
+      <p>
+        <%= link_to "edit", edit_painting_path(painting) %> |
+        <%= link_to "remove", painting, :confirm => 'Are you sure?', :method => :delete %>
+     </p>
+    </div>
   <% end %>
-  <div class="clear"></div>
-</div>
+
+
 
 <p>
-  <%= link_to "Add a Painting", new_painting_path(:gallery_id => @gallery) %>
+  <%= link_to "Add a Painting", new_painting_path(:gallery_id => @gallery) %> |
+  <%= link_to "Remove Gallery", @gallery, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View Galleries", galleries_path %>
 </p>
-
-<br>
 
 
 

@@ -18,12 +18,12 @@
 
 #banner {
 
-    background: rgba(108, 226, 235, 0.92);
-    margin: auto;
-
+  background: rgba(108, 226, 235, 0.92);
+  margin: auto;
   min-height: 50px;
-
 }
+
+
 #logo_img {
 
   //position: absolute;
@@ -39,17 +39,6 @@
 
 
 
-
-
-
-#notice {
-  color: rgba(247, 86, 47, 0.15) !important;
-  border: 2px solid red;
-  padding: 1em;
-  margin-bottom: 2em;
-  background-color: #f0f0f0;
-  font: bold smaller sans-serif;
-}
 
 #columns {
   margin: 30px 80px 0px 80px;
@@ -123,5 +112,11 @@
       display: none
     }
   }
+}
+
+footer {
+  float: right;
+  border: solid 1px;
+  width: 100%;
 }
 

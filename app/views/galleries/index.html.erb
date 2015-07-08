@@ -2,26 +2,27 @@
 
 <h1>Listing Galleries</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<% @galleries.each do |gallery| %>
+    <div class="gallery">
+          <div class="painting">
+            <h4><%= link_to gallery.name, gallery %></h4>
 
-  <tbody>
-    <% @galleries.each do |gallery| %>
-      <tr>
-        <td><%= gallery.name %></td>
-        <td><%= link_to 'Show', gallery %></td>
-        <td><%= link_to 'Edit', edit_gallery_path(gallery) %></td>
-        <td><%= link_to 'Destroy', gallery, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+
+               <% if gallery.paintings.count > 0 %>
+            <%= image_tag gallery.paintings.last.image_url(:thumb).to_s  %>
+                <%else%>
+            <%= image_tag "NoImage_592x444.jpg" %>
+                <%end %>
+          </div>
+
+
+          <p><%= link_to 'Edit', edit_gallery_path(gallery) %>
+          <%= link_to 'Destroy', gallery, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </p>
+
+          </div>
     <% end %>
-  </tbody>
-</table>
 
-<br>
+
 
 <%= link_to 'New Gallery', new_gallery_path %>

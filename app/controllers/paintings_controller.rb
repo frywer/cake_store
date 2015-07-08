@@ -28,7 +28,7 @@ class PaintingsController < ApplicationController
 
     respond_to do |format|
       if @painting.save
-        format.html { redirect_to @painting.gallery, notice: 'Painting was successfully created.' }
+        format.html { redirect_to @painting, notice: 'Painting was successfully created.' }
         format.json { render :show, status: :created, location: @painting }
       else
         format.html { render :new }
@@ -56,7 +56,7 @@ class PaintingsController < ApplicationController
   def destroy
     @painting.destroy
     respond_to do |format|
-      format.html { redirect_to @painting.gallery, notice: 'Painting was successfully destroyed.' }
+      format.html { redirect_to paintings_url, notice: 'Painting was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
