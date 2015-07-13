@@ -1,0 +1,14 @@
+
+
+  <div id="slider">
+    <ul class="slides" >
+      <% @slides.each do |slider| %>
+
+          <li class="slide_2"><h4><%=slider.title%></h4><p><%=slider.slider_content%></p></li>
+          <li class="slide"><%=image_tag slider.slider_image_url.to_s%></li>
+      <%end%>
+    </ul>
+  </div>
+
+
+

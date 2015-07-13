@@ -1,16 +1,6 @@
 <%= form_for @painting, :html => {:multipart => true} do |f| %>
-  <% if @painting.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@painting.errors.count, "error") %> prohibited this painting from being saved:</h2>
 
-      <ul>
-      <% @painting.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
+    <%= f.hidden_field :gallery_id %>
   <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>

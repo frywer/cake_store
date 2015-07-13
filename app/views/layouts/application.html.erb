@@ -8,29 +8,39 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
- <body class="<%=controller.controller_name%>">
+ <body>
 
    <div id="banner">
-     <div id="polosa"></div>
      <%= render :partial => 'store/header'%>
    </div>
 
 
 
+
  <div id="main_content">
 
-   <div id="slider">
+   <div id="yield_content">
 
-   </div>
+     <div id="main_menu">
 
-     <div id="side">
-        <%= render 'layouts/left_menu'%>
+
+       <ul>
+         <li id="home_button"><a href="#">Главная</a></li>
+       </ul>
+
+       <ul>
+         <li>Торты</li>
+         <li>Начинки</li>
+         <li>Цкны</li>
+         <li>О нас</li>
+         <li>Галлерея</li>
+         <li>Контакты</li>
+       </ul>
      </div>
 
-   <div id="yield_content">
+
      <%= yield %>
    </div>
-
  </div>
 
    <%= render 'layouts/footer' %>

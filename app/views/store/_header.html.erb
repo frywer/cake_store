@@ -1,33 +1,10 @@
+<div id="logo_image">
+  <%=link_to image_tag("shaboo_round_clipped_rev_1.png"), store_path%>
+</div>
 
-<nav class="top-bar" data-topbar role="navigation">
-  <ul class="title-area">
-    <li id="logo_img">
-      <%= link_to image_tag("shaboo.jpg"), store_path  %>
+  <%= render "slides/slider"%>
 
-    </li>
-    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
-
-  <section class="top-bar-section">
-    <!-- Right Nav Section -->
-
-
-    <!-- Left Nav Section -->
-    <ul class="right">
-      <li><a href="#">Домой</a></li>
-    </ul>
-    <ul class="right">
-      <li><a href="#">Акции</a></li>
-    </ul>
-    <ul class="right">
-      <li><a href="#">Новости</a></li>
-    </ul>
-    <ul class="right">
-      <li><%= link_to 'Галерея', galleries_path%></li>
-    </ul>
-    <ul class="right">
-      <li><a href="#">Контакты</a></li>
-    </ul>
-  </section>
-</nav>
+<div id="phone_contact">
+   <p><img> <%= image_tag "contact-icons-buttons-set-envelope-mobile-phone-mail_178327619.png"%></img> <a href="#"> 937 99 92</a></p>
+  <p><img> <%= image_tag "contact-icons-buttons-set-envelope_mail_178327619.jpg"%></img> <a href="#">example@mail.com</a></p>
+</div>

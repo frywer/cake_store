@@ -4,6 +4,7 @@ class OrdersController < ApplicationController
   before_action :set_cart, only: [:new, :create]
   before_action :set_order, only: [:show, :edit, :update, :destroy]
 
+
   # GET /orders
   # GET /orders.json
   def index
@@ -22,6 +23,7 @@ class OrdersController < ApplicationController
       return
     end
     @order = Order.new
+    @cake_categories = CakeCategory.all
   end
 
   # GET /orders/1/edit

@@ -1,0 +1,2 @@
+module CakeCategoriesHelper
+end

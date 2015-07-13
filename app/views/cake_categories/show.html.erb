@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @cake_category.title %>
+</p>
+
+
+<h3> Products under this category </h3>
+<% Product.where(cake_category_id: @cake_category.id).each do |product| %>
+    <li> <%= product.title %> </li>
+<% end %>
+
+<%= link_to "Add Product", new_product_path(:cake_category_id => @cake_category) %>
+
+<%= link_to 'Edit', edit_cake_category_path(@cake_category) %> |
+<%= link_to 'Back', cake_categories_path %>

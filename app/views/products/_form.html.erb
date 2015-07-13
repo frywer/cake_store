@@ -15,7 +15,7 @@
       </ul>
     </div>
   <% end %>
-
+    <%= select_tag(:cake_category_id, options_for_select(@cake_categories), :prompt => "Select one!", ) %>
   <div class="field">
     <%= f.label :title %><br>
     <%= f.text_field :title %>

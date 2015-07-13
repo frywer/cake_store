@@ -3,20 +3,27 @@
     <p id="notice"><%= notice %></p>
 <% end %>
 
+
+<div id="left_main_menu">
+<%= render "left_menu"%>
+</div>
+
+<div id="store_content">
+
 <h1>Cake Catalog</h1>
 
-<% cache ['store', Product.latest] do %>
+<% cache ['store_content', Product.latest] do %>
    <% @products.each do |product| %>
-        <%cache ['entry', product] do %>
-         <div class="entry">
-           <h3><%=link_to product.title , product_path(product.id)  %></h3>
-               <p class="leftimg"> <%= image_tag product.product_image_url(:thumb)  %></p>
-           <div class="descript"><%= truncate(strip_tags(product.description), length: 30)%></div>
-          <div class="price_container">
-          <span ><%= number_to_currency(product.price) %></span>
-            <%= button_to 'В Корзину', line_items_path(product_id: product), remote: true, :class => "button tiny" %>
-      </div>
-    </div>
+        <%cache ['product_container', product] do %>
+
+         <div class="product_container">
+               <div class="product_image_content"> <%= image_tag product.product_image_url.to_s  %></div>
+           <h3 class="product_title_style"><%=link_to product.title , product_path(product.id)  %></h3>
+
+           <div class="price_container">
+               <span ><%= (product.price) %> Лей / кг </span>
+           </div>
+          </div>
         <% end %>
     <% end %>
 <% end %>
@@ -25,3 +32,4 @@
   <%= will_paginate @products,previous_label: h("<"), next_label: h(">") %>
 
    </div>
+</div>

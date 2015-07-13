@@ -1,0 +1,27 @@
+// Place all the styles related to the CakeCategories controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.cake_category_menu_style {
+  margin-top: 10px;
+
+  ul {
+
+    border-bottom: 1px dashed;
+    padding: 8px 8px 10px 9px;
+    //line-height: 10px;
+    margin-bottom: 0;
+    margin-left: 30px;
+    margin-right: 30px;
+      list-style-image: url("small_tort.png");
+
+  }
+  li {
+    text-decoration-line: underline;
+  }
+  li:hover {
+    text-decoration: none;
+  }
+
+}

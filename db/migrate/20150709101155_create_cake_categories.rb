@@ -1,0 +1,9 @@
+class CreateCakeCategories < ActiveRecord::Migration
+  def change
+    create_table :cake_categories do |t|
+      t.string :title
+
+      t.timestamps null: false
+    end
+  end
+end

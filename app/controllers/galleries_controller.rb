@@ -5,12 +5,14 @@ class GalleriesController < ApplicationController
   # GET /galleries.json
   def index
     @galleries = Gallery.all
+    @cake_categories = CakeCategory.all
   end
 
   # GET /galleries/1
   # GET /galleries/1.json
   def show
     @paintings = Painting.all
+    @cake_categories = CakeCategory.all
   end
 
   # GET /galleries/new

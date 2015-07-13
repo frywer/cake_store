@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :slides
+
+  resources :cake_categories
+
   resources :paintings
 
   resources :galleries

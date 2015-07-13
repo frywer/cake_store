@@ -438,7 +438,7 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-button-classes: $include-html-classes;
 
 // We use these to build padding for buttons.
- $button-tny: rem-calc(5);
+// $button-tny: rem-calc(5);
 // $button-sml: rem-calc(14);
 // $button-med: rem-calc(16);
 // $button-lrg: rem-calc(18);
@@ -464,7 +464,7 @@ $include-html-global-classes: $include-html-classes;
 // We use these to control button border styles.
 // $button-border-width: 0;
 // $button-border-style: solid;
- $button-bg-color: #ff4e12; //$primary-color;
+// $button-bg-color: #ff4e12; //$primary-color;
 // $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
 // $button-border-color: $button-bg-hover;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
@@ -1170,7 +1170,7 @@ $include-html-global-classes: $include-html-classes;
 // $side-nav-list-margin: rem-calc(0 0 7 0);
 
 // We use these to control link styles.
- $side-nav-link-color: white;//$primary-color;
+// $side-nav-link-color: white;//$primary-color;
 // $side-nav-link-color-active: scale-color($side-nav-link-color, $lightness: 30%);
 // $side-nav-link-color-hover: scale-color($side-nav-link-color, $lightness: 30%);
 // $side-nav-link-bg-hover: hsla(0, 0, 0, .025);

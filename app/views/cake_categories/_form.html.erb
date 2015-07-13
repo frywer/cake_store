@@ -1,0 +1,21 @@
+<%= form_for(@cake_category) do |f| %>
+  <% if @cake_category.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cake_category.errors.count, "error") %> prohibited this cake_category from being saved:</h2>
+
+      <ul>
+      <% @cake_category.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

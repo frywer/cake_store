@@ -17,77 +17,98 @@
  */
 // HEADER //
 #banner {
+  height: 250px;
+  margin-left: 80px;
+  float: left;
+  width: 1090px;
 
-  background: rgba(108, 226, 235, 0.92);
-  margin: auto;
-  min-height: 50px;
-}
-
-
-#logo_img {
-  max-width: 200px;
-  max-height: 100px;
-  padding: 0px 0px 0px 20px;
-}
-
-#polosa {
-    min-height: 10px;
-
+  #logo_image {
+    width: 220px;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: absolute;
   }
+
+  #phone_contact {
+    //margin-left: 50px;
+    float: left;
+    p {
+      font-size: 16px;
+      margin-bottom: 3px;
+    }
+    img{
+      width: 24px;
+    }
+  }
+}
 
 // HEADER //
 
-//slider/////////////////////////
+//main menu //
+#main_menu {
+
+  background-color: rgba(108, 226, 235, 0.79);
+  border-top: solid 3px;
+  border-left: solid 1px;
+  border-right: solid 1px;
+  border-bottom: solid 1px;
+  border-radius: 2px;
+
+  border-color: #5b0466;
+  height: 43px;
+  float: right;
+  width: 745px;
+
+    #home_button {
+      font-size: 18px;
+      float: left;
+      margin: 0;
+      padding-top:  5px;
+      padding-left: 0px;
+      border: none !important;
+    }
+
+  ul {
+    margin-top: 3px;
+    font-size: 14px;
+    margin-bottom: 0px !important;
+    margin-left: 10px;
+    margin-right: 20px;
+    list-style-type: none;
+    li {
+      //color: #ffffff;
+      height: 30px;
+      float: right;
+      border-left: dashed 1px;
+      margin-left: 20px;
+      padding-top: 5px;
+      padding-left: 20px;
+    }
+    }
+  }
+
+//main menu //
 
 
-
-
-#slider {
-height: 230px;
-  width: 100%;
-  border: solid 1px;
-}
-
-
-//slider ////////////////////////
 
 
 
 #main_content {
-  width: 950px;
-  margin-left: 13%;
-  margin-top: 100px;
-  border: solid 1px;
+  width: 1000px;
+  margin-left: 120px;
+  //border: solid 1px;
   min-height: 100%;
 }
 
   #yield_content {
-    border: solid 1px;
-    margin-left: 220px;
+    //border: solid 1px;
     min-height: 1200px;
 
   }
 
 
-  #side {
 
-    float: left;
-    height: 900px;
-    width: 16em;
-    background: #6b727b;
-    box-shadow: 0 0 10px rgba(21, 40, 46, 0.89);
-
-
-    #cart {
-      font-size: smaller;
-      color: white;
-      table {
-        border-top: 1px dotted #595;
-        border-bottom: 1px dotted #595;
-        margin-bottom: 10px;
-      }
-    }
-  }
 
 
 

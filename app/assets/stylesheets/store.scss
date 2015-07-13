@@ -2,110 +2,193 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.store{
-  h1{
-    margin: 0;
-    padding-bottom: 0.5em;
-    font: 150% sans-serif;
-    color: #226;
-    border-bottom: 3px dotted #77d;
+
+
+
+@font-face {
+  font-family: "Lobster";
+   src: url('Lobster.ttf');
+}
+//slider//
+ul {
+  //list-style-type: none;
+}
+#slider_container{
+  background-color: rgba(0, 35, 47, 0.05);
+  height: 220px;
+
+
+}
+
+#slider {
+
+
+//  background-color: rgba(0, 35, 47, 0.05);
+  height: 184px;
+  //max-height: 200px;
+  width: 980px;
+  overflow: hidden;
+  margin-left: 110px;
+  float: left;
+  margin-top: 4px;
+
+}
+#slider .slides{
+  //padding-left: 100px;
+  display: block;
+  width: 6000px;
+  height: 200px;
+  margin: 0;
+  //padding: 0;
+
+}
+
+#slider .slide {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  float: left;
+  list-style-type: none;
+  width: 500px;
+  height: 180px;
+
+}
+.slide_2 {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  float: left;
+  width: 475px;
+  height: 200px;
+  padding: 10px;
+  padding-left: 120px;
+
+}
+
+
+// slider //
+
+// left main menu block//
+
+
+#side {
+  display: block;
+  //border: solid 1px red;
+  //background: url("lenta_left_menu.png") ;
+  background-size: 250px ;
+  background-repeat: no-repeat;
+  float: left;
+  min-height: 500px;
+  width: 250px;
+
+  #lenta_font {
+    width: 190px;
+    border-bottom: solid 2px ;
+    font-family: "Lobster", Arial;
+    //font-style: italic;
+    font-size: 30px;
+    margin-top: 12px;
+    margin-left: 30px;
+    padding-bottom: 3px;
+    color: #7f0d65;
   }
 
 
-  /* Запись в каталоге store */
-  .entry {
-    //overflow: auto;
-    margin: 5px 10px 50px 0px  ;
-    max-height: 400px;
-    max-width: 230px;
+
+
+
+  #cart {
+    font-size: smaller;
+    color: white;
+    table {
+      border-top: 1px dotted #595;
+      border-bottom: 1px dotted #595;
+      margin-bottom: 10px;
+    }
+  }
+}
+// left main menu block//
+
+
+// main  store_content//
+
+#store_content {
+  margin-top: 5px;
+  border: solid 1px blue;
+  float: right;
+  width: 745px;
+
+  .product_container {
+    margin-top: 5px;
+    border: solid 0.5px rgba(3, 0, 1, 0.44);
     float: left;
+    margin-left: 5px;
+    width: 240px;
+    padding-left: 4px;
+    height: 420px;
 
-
-    .leftimg {
-      float: left;
-     // margin: 7px 7px 7px 0;
+    h3 {
+      font-size: large;
     }
-    .leftimg:hover {
 
-      box-shadow: 0px 0px 5px 0px   ;
-    }
-    .descript {
-      position: relative;
-      float: left;
+    .product_image_content {
+      width: 230px;
+      margin-top: 5px;
     }
 
     .price_container{
-      position: relative;
-      float: left;
+      font-size: 20px;
+      font-family: "Lobster", Arial;
+
+
     }
-
-
-    h3{
-      float: left;
-      font-size: 120%;
-      font-family: sans-serif;
-    }
-    img
-    {
-      width: 225px;
-      margin-right: 5px;
-      margin-bottom: 5px;
-      position: relative ;
-    }
-
-
-
   }
-  //.entry:hover {
-   // background-opaciry: rgba(193, 252, 255, 0.54);
-
 
 
 }
-// Нумерация страниц
-.pagination {
+// main  store_content//
 
-  cursor: default;
-  height: 22px;
-  float: left;
-  padding: 10px 100px;
-  a, span, em {
-    padding: 0.2em 0.5em;
-    display: block;
+
+  // Нумерация страниц
+  .pagination {
+
+    cursor: default;
+    height: 22px;
     float: left;
-    margin-right: 2px;
-    border-radius: 4px;
-  }
-  .disabled {
-    display: none;
-  }
-  .current {
-    font-style: normal;
-    font-weight: bold;
-    background: #666; //#2e6ab1;
-    color: white;
-    border: 1px solid #2e6ab1;
-  }
-  a {
-    text-decoration: none;
-    color: #105cb6;
-    border: 1px solid #9aafe5;
-    &:hover, &:focus {
-      color: #000033;
-      border-color: #000033;
+    padding: 10px 100px;
+    a, span, em {
+      padding: 0.2em 0.5em;
+      display: block;
+      float: left;
+      margin-right: 2px;
+      border-radius: 4px;
+    }
+    .disabled {
+      display: none;
+    }
+    .current {
+      font-style: normal;
+      font-weight: bold;
+      background: #666; //#2e6ab1;
+      color: white;
+      border: 1px solid #2e6ab1;
+    }
+    a {
+      text-decoration: none;
+      color: #105cb6;
+      border: 1px solid #9aafe5;
+      &:hover, &:focus {
+        color: #000033;
+        border-color: #000033;
+      }
+    }
+    .page_info {
+      background: #2e6ab1;
+      color: white;
+      padding: 0.4em 0.6em;
+      width: 22em;
+      margin-bottom: 0.3em;
+      text-align: center;
+      b {
+        color: #000033;
+        background: #2e6ab1 + 60;
+        padding: 0.1em 0.25em;
+      }
     }
   }
-  .page_info {
-    background: #2e6ab1;
-    color: white;
-    padding: 0.4em 0.6em;
-    width: 22em;
-    margin-bottom: 0.3em;
-    text-align: center;
-    b {
-      color: #000033;
-      background: #2e6ab1 + 60;
-      padding: 0.1em 0.25em;
-    }
-  }
-}
