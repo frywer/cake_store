@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :set_cake_category
 
   # GET /users
   # GET /users.json
@@ -77,4 +78,11 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:name, :password, :password_confirmation)
     end
+
+
+
+  def set_cake_category
+    @slides = Slide.all
+    @cake_categories = CakeCategory.all
+  end
 end

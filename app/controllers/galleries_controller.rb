@@ -1,18 +1,21 @@
 class GalleriesController < ApplicationController
   before_action :set_gallery, only: [:show, :edit, :update, :destroy]
+  before_action :set_cake_category
+  skip_before_action :authorize, only: [:show, :index]
 
   # GET /galleries
   # GET /galleries.json
   def index
     @galleries = Gallery.all
-    @cake_categories = CakeCategory.all
+    @paintings = Painting.all
+
   end
 
   # GET /galleries/1
   # GET /galleries/1.json
   def show
     @paintings = Painting.all
-    @cake_categories = CakeCategory.all
+
   end
 
   # GET /galleries/new
@@ -74,4 +77,9 @@ class GalleriesController < ApplicationController
     def gallery_params
       params.require(:gallery).permit(:name, :image)
     end
+
+  def set_cake_category
+    @cake_categories = CakeCategory.all
+    @slides = Slide.all
+  end
 end

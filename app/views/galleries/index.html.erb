@@ -1,14 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Galleries</h1>
+<h4>Галлерея</h4>
+
+
 
 <% @galleries.each do |gallery| %>
     <div class="gallery">
           <div class="painting">
             <h4><%= link_to gallery.name, gallery %></h4>
 
-
-               <% if gallery.paintings.count > 0 %>
+            <% if gallery.paintings.count > 0 %>
             <%= image_tag gallery.paintings.last.image_url(:thumb).to_s  %>
                 <%else%>
             <%= image_tag "NoImage_592x444.jpg" %>

@@ -1,3 +1,4 @@
+<div class="form_for">
 <%= form_for(@cake_category) do |f| %>
   <% if @cake_category.errors.any? %>
     <div id="error_explanation">
@@ -12,10 +13,11 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br>
+    <%= f.label :название_категории %><br>
     <%= f.text_field :title %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+</div>

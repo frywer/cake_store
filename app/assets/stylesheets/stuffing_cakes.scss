@@ -1,3 +1,19 @@
 // Place all the styles related to the StuffingCakes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.stuffing_cake_block {
+  height: 250px;
+  .stuffing_cake_image {
+    float: left;
+    width: 350px;
+    border: solid 2px #7f0d65;
+    border-radius: 2px;
+
+  }
+  .stuffing_cake_description{
+    float: left;
+    width: 400px;
+    padding: 5px;
+  }
+}

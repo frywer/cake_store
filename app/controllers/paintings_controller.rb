@@ -4,7 +4,7 @@ class PaintingsController < ApplicationController
   # GET /paintings
   # GET /paintings.json
   def index
-    @paintings = Painting.all
+    @products = Product.all
     @cake_categories = CakeCategory.all
   end
 

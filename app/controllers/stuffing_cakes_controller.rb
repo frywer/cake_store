@@ -1,6 +1,7 @@
 class StuffingCakesController < ApplicationController
   before_action :set_stuffing_cake,  only: [ :show, :edit, :update, :destroy]
   before_action :set_cake_category, :main_slider
+  skip_before_action :authorize, only: [:index]
 
 
   # GET /stuffing_cakes

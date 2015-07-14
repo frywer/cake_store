@@ -1,3 +1,4 @@
+<div class="form_for" >
 <%= form_for @slide, :html => {:multipart => true} do |f| %>
   <% if @slide.errors.any? %>
     <div id="error_explanation">
@@ -12,18 +13,20 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br>
+    <%= f.label :Заголовок %>
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :slider_image %><br>
+    <p class="pozor">розмеры картинки: 400x180 | 600x270 </p>
+    <%= f.label :Картинка %>
     <%= f.file_field :slider_image %>
   </div>
   <div class="field">
-    <%= f.label :slider_content %><br>
+    <%= f.label :Контент %>
     <%= f.text_area :slider_content %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+</div>

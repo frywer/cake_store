@@ -16,6 +16,7 @@ class SlidesController < ApplicationController
   # GET /slides/new
   def new
     @slide = Slide.new
+
   end
 
   # GET /slides/1/edit
@@ -74,6 +75,7 @@ class SlidesController < ApplicationController
     end
 
     def set_cake_category
+      @slides = Slide.all
       @cake_categories = CakeCategory.all
     end
 end

@@ -1,31 +1,26 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Stuffing Cakes</h1>
+<h4 class="h4_title">Начинки для Торта</h4>
 
-<table>
-  <thead>
-    <tr>
-      <th>Image</th>
-      <th>Description</th>
-      <th>Price</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
+
+
     <% @stuffing_cakes.each do |stuffing_cake| %>
-      <tr>
-        <td><%= image_tag stuffing_cake.image_url.to_s %></td>
-        <td><%= stuffing_cake.description %></td>
-        <td><%= stuffing_cake.price %></td>
-        <td><%= link_to 'Show', stuffing_cake %></td>
-        <td><%= link_to 'Edit', edit_stuffing_cake_path(stuffing_cake) %></td>
-        <td><%= link_to 'Destroy', stuffing_cake, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+       <div class="stuffing_cake_block">
+       <%= image_tag stuffing_cake.image_url.to_s, class: "stuffing_cake_image" %>
+       <div class="stuffing_cake_description"> <%= stuffing_cake.description %></div>
+       <div class="stuffing_cake_price"><%= stuffing_cake.price %></div>
+
+        <%= link_to 'Edit', edit_stuffing_cake_path(stuffing_cake) %>
+        <%= link_to 'Destroy', stuffing_cake, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+       </div>
+
+             <% end %>
+
 
 <br>
 
 <%= link_to 'New Stuffing cake', new_stuffing_cake_path %>
+
+

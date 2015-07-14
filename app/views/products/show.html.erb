@@ -14,7 +14,6 @@
 
 <div class="cake_description">
   <%= @product.description %>
-  <p class="product_id_price">Цена:<%= @product.price %>/кг</p>
 </div>
 
 
@@ -29,9 +28,9 @@
 
 
 
-
   <% if session[:user_id] %>
     <%= link_to 'Back', products_path %>
 <%= link_to 'Edit', edit_product_path(@product) %>
 <%end %>
 </div>
+<h4 class="product_id_price">Цена:<%= @product.price %>/кг</h4>

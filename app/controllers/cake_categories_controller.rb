@@ -1,23 +1,26 @@
 class CakeCategoriesController < ApplicationController
   before_action :set_cake_category, only: [:show, :edit, :update, :destroy]
+  before_action :set_slide
+  skip_before_action :authorize, only: [:show, :index]
 
 
   # GET /cake_categories
   # GET /cake_categories.json
   def index
     @cake_categories = CakeCategory.all
-    @slides = Slide.all
+
   end
 
   # GET /cake_categories/1
   # GET /cake_categories/1.json
   def show
-    @slides = Slide.all
+
    # @products = Product.all
   end
 
   # GET /cake_categories/new
   def new
+    @cake_categories = CakeCategory.all
     @cake_category = CakeCategory.new
   end
 
@@ -76,4 +79,8 @@ class CakeCategoriesController < ApplicationController
     def cake_category_params
       params.require(:cake_category).permit(:title)
     end
+
+   def set_slide
+     @slides = Slide.all
+   end
 end
