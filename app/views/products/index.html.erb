@@ -1,11 +1,14 @@
-<h1>Listing products</h1>
+
+<h3 class="product_id_title">Все торты:</h3>
+<%= link_to 'Новый товар ', new_product_path %>
+<div class="products">
 
 <table>
   <% @products.each do |product|%>
   <tr class="<%= cycle('list_line_odd', 'list_line_even')%>">
 
     <td>
-      <%= image_tag(product.product_image_url, class: 'list_image') %>
+      <%= image_tag(product.product_image_url, class: "list_image") %>
     </td>
 
     <td class="list_description">
@@ -27,4 +30,5 @@
 
 <br/>
 
-<%= link_to 'Новый товар ', new_product_path %>
+  <br>
+</div>

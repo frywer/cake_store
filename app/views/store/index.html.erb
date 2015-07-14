@@ -4,13 +4,11 @@
 <% end %>
 
 
-<div id="left_main_menu">
-<%= render "left_menu"%>
-</div>
+
 
 <div id="store_content">
 
-<h1>Cake Catalog</h1>
+<h4 >Все торты:</h4>
 
 <% cache ['store_content', Product.latest] do %>
    <% @products.each do |product| %>
@@ -18,18 +16,20 @@
 
          <div class="product_container">
                <div class="product_image_content"> <%= image_tag product.product_image_url.to_s  %></div>
-           <h3 class="product_title_style"><%=link_to product.title , product_path(product.id)  %></h3>
+           <h5 class="product_title_style"><%=link_to product.title , product_path(product.id)  %></h5>
+
+           <div class="short_bod"></div>
 
            <div class="price_container">
                <span ><%= (product.price) %> Лей / кг </span>
            </div>
           </div>
+
         <% end %>
     <% end %>
 <% end %>
-<div class="pagination">
-
-  <%= will_paginate @products,previous_label: h("<"), next_label: h(">") %>
-
-   </div>
 </div>
+
+   <%= will_paginate @products,previous_label: h("<"), next_label: h(">") %>
+
+

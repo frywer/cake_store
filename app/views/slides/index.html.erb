@@ -1,25 +1,35 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Slides</h1>
 
+<div class="products">
+  <h3>Слыйды</h3>
+  <table>
 
     <% @slides.each do |slide| %>
+        <tr class="<%= cycle('list_line_odd', 'list_line_even')%>">
 
-        <%= slide.title %>
-    <br>
+          <td>
+          <%= image_tag slide.slider_image.to_s, class: "slide_image_controller" %>
+          </td>
+
+          <td class="list_description">
+            <dl>
+              <dt><%= slide.title %></dt>
+              <dd><%= truncate(strip_tags( slide.slider_content), length:100) %></dd>
+            </dl>
+          </td>
+
+          <td class="list_actions">
+            <%= link_to 'Просмотр', slide %> <br/>
+            <%= link_to 'Редактировать', edit_slide_path(slide) %><br/>
+            <%= link_to 'Стереть', slide, method: :delete, data: {confirm: 'Are you sure?'}%>
+          </td>
+        </tr>
+    <%end%>
+  </table>
+
+  <br/>
+</div>
+<%= link_to 'Новый слайд',  new_slide_path %>
 
 
-    <%= image_tag slide.slider_image.to_s %>
-
-
-    <%= slide.slider_content %>
-        <%= link_to 'Show', slide %>
-        <%= link_to 'Edit', edit_slide_path(slide) %>
-        <%= link_to 'Destroy', slide, method: :delete, data: { confirm: 'Are you sure?' } %>
-
-    <% end %>
-
-
-<br>
-
-<%= link_to 'New Slide', new_slide_path %>

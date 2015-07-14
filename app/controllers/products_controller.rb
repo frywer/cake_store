@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
 
+  before_action :main_slider, :set_cake_category
   before_action :set_product, only: [:show, :edit, :update, :destroy]
   skip_before_action :authorize, only: [:show]
 
@@ -7,8 +8,6 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.all
-
-
   end
 
   # GET /products/1
@@ -20,12 +19,12 @@ class ProductsController < ApplicationController
   def new
 
    @product = Product.new
-   @cake_categories = CakeCategory.all.map{|c| [ c.title, c.id ] }
+   @cake_category = CakeCategory.all.map{|c| [ c.title, c.id ] }
   end
 
   # GET /products/1/edit
   def edit
-    @cake_categories = CakeCategory.all.map{|c| [ c.title, c.id ] }
+    @cake_category = CakeCategory.all.map{|c| [ c.title, c.id ] }
   end
 
   # POST /products
@@ -56,7 +55,7 @@ class ProductsController < ApplicationController
         format.html { redirect_to @product, notice: 'Product was successfully updated.' }
         format.json { render :show, status: :ok, location: @product }
       else
-        format.html { render :edit }
+        format.html { render :edit, notice: 'Product was successfully updated.'}
         format.json { render json: @product.errors, status: :unprocessable_entity }
       end
     end
@@ -98,6 +97,14 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:title, :description, :image_url, :price, :product_image, :cake_category)
+      params.require(:product).permit(:title, :description, :ingridients , :price, :product_image, :cake_category)
     end
+
+  def main_slider
+    @slides = Slide.all
+  end
+
+  def set_cake_category
+    @cake_categories = CakeCategory.all
+  end
 end

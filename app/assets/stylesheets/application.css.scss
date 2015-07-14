@@ -17,10 +17,11 @@
  */
 // HEADER //
 #banner {
-  height: 250px;
-  margin-left: 80px;
+
+  //height: 250px;
+  margin-left: 125px;
   float: left;
-  width: 1090px;
+  width: 995px;
 
   #logo_image {
     width: 220px;
@@ -30,25 +31,23 @@
     position: absolute;
   }
 
-  #phone_contact {
-    //margin-left: 50px;
-    float: left;
-    p {
-      font-size: 16px;
-      margin-bottom: 3px;
-    }
-    img{
-      width: 24px;
-    }
-  }
 }
 
 // HEADER //
 
 //main menu //
-#main_menu {
+.main_menu {
 
-  background-color: rgba(108, 226, 235, 0.79);
+
+  //shadow //
+  position:relative;
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  //shadow //
+  margin-top: 10px;
+
+  background-color: #ffffff;
   border-top: solid 3px;
   border-left: solid 1px;
   border-right: solid 1px;
@@ -58,7 +57,7 @@
   border-color: #5b0466;
   height: 43px;
   float: right;
-  width: 745px;
+  width: 755px;
 
     #home_button {
       font-size: 18px;
@@ -70,6 +69,7 @@
     }
 
   ul {
+    color: #5b0466;
     margin-top: 3px;
     font-size: 14px;
     margin-bottom: 0px !important;
@@ -77,7 +77,13 @@
     margin-right: 20px;
     list-style-type: none;
     li {
-      //color: #ffffff;
+      a {
+        //color: #7f0d65;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
       height: 30px;
       float: right;
       border-left: dashed 1px;
@@ -86,7 +92,28 @@
       padding-left: 20px;
     }
     }
+
+
   }
+
+.main_menu:before,
+.main_menu:after {
+  content:"";
+  position:absolute;
+  z-index:-2;
+}
+
+.main_menu:before {
+  top:50%;
+  bottom:0px;
+  left:10px;
+  right:10px;
+  -webkit-box-shadow:0 0 15px rgba(0,0,0,0.6);
+  -moz-box-shadow:0 0 15px rgba(0,0,0,0.6);
+  box-shadow:0 0 15px rgba(0,0,0,0.6);
+  -moz-border-radius:100px / 10px;
+  border-radius:100px / 10px;
+}
 
 //main menu //
 
@@ -150,9 +177,39 @@
 
 }
 
-footer {
-  float: right;
-  border: solid 1px;
-  width: 100%;
-}
+//============footer ==========//
 
+
+#footer {
+  float: right;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.24);
+
+  .shaboo_img_footer {
+    width: 300px;
+    float: left;
+  }
+
+  #line_footer {
+    float: left;
+    background-color: #6ce2eb;
+    width: 100%;
+    height: 40px;
+  }
+
+  #footer_menu {
+    float: left;
+  }
+
+  #phone_footer {
+    float: right;
+    margin-right: 20px;
+  }
+
+  #copyright {
+    float: left;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+}
+//============footer ==========//

@@ -9,32 +9,39 @@
   font-family: "Lobster";
    src: url('Lobster.ttf');
 }
+
+
+#phone_contact {
+  float: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  p {
+    font-size: 16px;
+    margin-bottom: 3px;
+  }
+  img{
+    width: 24px;
+  }
+}
+
 //slider//
-ul {
-  //list-style-type: none;
-}
-#slider_container{
-  background-color: rgba(0, 35, 47, 0.05);
-  height: 220px;
 
 
-}
 
 #slider {
-
-
-//  background-color: rgba(0, 35, 47, 0.05);
   height: 184px;
-  //max-height: 200px;
-  width: 980px;
+  width: 877px;
   overflow: hidden;
-  margin-left: 110px;
+  margin-left: 120px;
   float: left;
   margin-top: 4px;
 
 }
 #slider .slides{
-  //padding-left: 100px;
+  ul {
+    list-style-type: none;
+  }
+
   display: block;
   width: 6000px;
   height: 200px;
@@ -47,7 +54,7 @@ ul {
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   float: left;
   list-style-type: none;
-  width: 500px;
+  width: 400px;
   height: 180px;
 
 }
@@ -75,10 +82,10 @@ ul {
   background-repeat: no-repeat;
   float: left;
   min-height: 500px;
-  width: 250px;
+  width: 240px;
 
   #lenta_font {
-    width: 190px;
+    width: 180px;
     border-bottom: solid 2px ;
     font-family: "Lobster", Arial;
     //font-style: italic;
@@ -87,6 +94,11 @@ ul {
     margin-left: 30px;
     padding-bottom: 3px;
     color: #7f0d65;
+  }
+
+  #face_book {
+    margin-left: 30px;
+    margin-top: 50px;
   }
 
 
@@ -109,19 +121,46 @@ ul {
 // main  store_content//
 
 #store_content {
-  margin-top: 5px;
-  border: solid 1px blue;
   float: right;
-  width: 745px;
+  width: 755px;
+
+  h4 {
+    font-family: "Lobster", Arial;
+    color: #7f0d65;
+
+  }
 
   .product_container {
-    margin-top: 5px;
+
+    //shadow//
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-border-radius:4px;
+    //shadow//
+
+
+    background-color: #ffffff;
+    margin-top: 18px;
     border: solid 0.5px rgba(3, 0, 1, 0.44);
+    border-radius: 2px;
     float: left;
-    margin-left: 5px;
+    margin-left: 8px;
     width: 240px;
     padding-left: 4px;
     height: 420px;
+
+
+
+    .short_bod {
+      background-image: url("sep.png");
+      background-repeat: no-repeat;
+      margin-left: 70px;
+      //width: 300px;
+      height: 8px;
+
+    }
 
     h3 {
       font-size: large;
@@ -140,6 +179,36 @@ ul {
     }
   }
 
+  .product_container:before,
+  .product_container:after {
+    content:"";
+    position:absolute;
+    z-index:-2;
+    bottom:15px;
+    left:10px;
+    width:50%;
+    height:20%;
+    max-width:300px;
+    -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+    box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+    -webkit-transform:rotate(-3deg);
+    -moz-transform:rotate(-3deg);
+    -ms-transform:rotate(-3deg);
+    -o-transform:rotate(-3deg);
+    transform:rotate(-3deg);
+  }
+  .product_container:after {
+    right:10px;
+    left:auto;
+    -webkit-transform:rotate(3deg);
+    -moz-transform:rotate(3deg);
+    -ms-transform:rotate(3deg);
+    -o-transform:rotate(3deg);
+    transform:rotate(3deg);
+  }
+
+
 
 }
 // main  store_content//
@@ -147,11 +216,11 @@ ul {
 
   // Нумерация страниц
   .pagination {
-
-    cursor: default;
-    height: 22px;
     float: left;
-    padding: 10px 100px;
+    height: 22px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 500px;
     a, span, em {
       padding: 0.2em 0.5em;
       display: block;
@@ -167,7 +236,7 @@ ul {
       font-weight: bold;
       background: #666; //#2e6ab1;
       color: white;
-      border: 1px solid #2e6ab1;
+      //border: 1px solid #2e6ab1;
     }
     a {
       text-decoration: none;

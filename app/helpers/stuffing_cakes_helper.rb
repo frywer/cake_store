@@ -1,0 +1,2 @@
+module StuffingCakesHelper
+end

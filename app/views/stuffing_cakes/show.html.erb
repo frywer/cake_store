@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @stuffing_cake.image %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @stuffing_cake.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @stuffing_cake.price %>
+</p>
+
+<%= link_to 'Edit', edit_stuffing_cake_path(@stuffing_cake) %> |
+<%= link_to 'Back', stuffing_cakes_path %>

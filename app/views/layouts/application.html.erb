@@ -12,6 +12,26 @@
 
    <div id="banner">
      <%= render :partial => 'store/header'%>
+
+     <div id="phone_contact">
+       <p><img> <%= image_tag "contact-icons-buttons-set-envelope-mobile-phone-mail_178327619.png"%></img> <a href="#"> 937 99 92</a></p>
+       <p><img> <%= image_tag "contact-icons-buttons-set-envelope_mail_178327619.jpg"%></img> <a href="#">example@mail.com</a></p>
+     </div>
+
+     <div class="main_menu">
+       <ul>
+         <li id="home_button"><%= link_to "Главная", store_index_path%></li>
+       </ul>
+
+       <ul>
+         <li><%= link_to "Контакты", store_index_path%></li>
+         <li><%= link_to "Галлерея", products_path%></li>
+         <li><%= link_to "Цены", products_path%></li>
+         <li><%= link_to "О нас", products_path%></li>
+         <li><%= link_to "Начинки", stuffing_cakes_path%></li>
+         <li><%= link_to "Торты", store_index_path%></li>
+       </ul>
+     </div>
    </div>
 
 
@@ -19,26 +39,11 @@
 
  <div id="main_content">
 
+   <div id="left_main_menu">
+     <%= render "layouts/left_menu"%>
+   </div>
+
    <div id="yield_content">
-
-     <div id="main_menu">
-
-
-       <ul>
-         <li id="home_button"><a href="#">Главная</a></li>
-       </ul>
-
-       <ul>
-         <li>Торты</li>
-         <li>Начинки</li>
-         <li>Цкны</li>
-         <li>О нас</li>
-         <li>Галлерея</li>
-         <li>Контакты</li>
-       </ul>
-     </div>
-
-
      <%= yield %>
    </div>
  </div>

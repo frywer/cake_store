@@ -1,3 +1,4 @@
+<div class="form_for" >
 <%= form_for(@product) do |f| %>
   <% if @product.errors.any? %>
     <div id="error_explanation">
@@ -15,27 +16,29 @@
       </ul>
     </div>
   <% end %>
-    <%= select_tag(:cake_category_id, options_for_select(@cake_categories), :prompt => "Select one!", ) %>
+    <%= select_tag(:cake_category_id, options_for_select(@cake_category), :prompt => "Выбери категорию!", ) %>
   <div class="field">
-    <%= f.label :title %><br>
+    <%= f.label :Название_торта %>
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :description %><br>
+    <%= f.label :Описание %>
     <%= f.text_area :description, rows: 6 %>
   </div>
   <div class="field">
-    <%= f.label :image_url %><br>
-    <%= f.text_field :image_url %>
+    <%= f.label :Ингридиенты %>
+    <%= f.text_area :ingridients, rows: 7 %>
   </div>
     <div class="field">
+      <%= f.label :Картинка %>
       <%= f.file_field :product_image %>
     </div>
   <div class="field">
-    <%= f.label :price %><br>
+    <%= f.label :Цена %>
     <%= f.text_field :price %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+</div>

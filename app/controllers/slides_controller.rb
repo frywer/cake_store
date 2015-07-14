@@ -1,5 +1,6 @@
 class SlidesController < ApplicationController
   before_action :set_slide, only: [:show, :edit, :update, :destroy]
+  before_action :set_cake_category
 
   # GET /slides
   # GET /slides.json
@@ -70,5 +71,9 @@ class SlidesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def slide_params
       params.require(:slide).permit(:title, :slider_image, :slider_content)
+    end
+
+    def set_cake_category
+      @cake_categories = CakeCategory.all
     end
 end

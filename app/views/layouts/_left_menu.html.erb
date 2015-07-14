@@ -1,0 +1,39 @@
+
+
+<div id="side">
+
+
+
+  <p id="lenta_font">Торты:</p>
+
+<%=render "cake_categories/cake_categories"%>
+
+
+
+  <div id="cart">
+    <% if @cart %>
+        <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
+            <%= render @cart %>
+        <% end %>
+    <% end %>
+  </div>
+
+  <div id="face_book">
+    <!-- Facebook Badge START --><a href="https://www.facebook.com/ivan.Georgivic" title="Ivan Georgievic" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" target="_TOP">Ivan Georgievic</a><br /><a href="https://www.facebook.com/ivan.Georgivic" title="Ivan Georgievic" target="_TOP"><img class="img" src="https://badge.facebook.com/badge/1529688948.3270.1717468091.png" style="border: 0px;" alt="" /></a><br /><a href="https://www.facebook.com/badges/" title="&#x421;&#x43e;&#x437;&#x434;&#x430;&#x439;&#x442;&#x435; &#x441;&#x432;&#x43e;&#x44e; &#x441;&#x43e;&#x431;&#x441;&#x442;&#x432;&#x435;&#x43d;&#x43d;&#x443;&#x44e; &#x432;&#x438;&#x437;&#x438;&#x442;&#x43a;&#x443;!" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;" target="_TOP">Создайте свою визитку</a><!-- Facebook Badge END -->
+  </div>
+
+  <div id="work_panel">
+  <% if session[:user_id] %>
+      <ul>
+        <li><%= link_to 'Orders', orders_path %></li>
+        <li><%= link_to 'Products', products_path %></li>
+        <li><%= link_to 'Users', users_path %></li>
+        <li><%= link_to 'who bought', products_who_bought_path %></li>
+        <li><%= link_to 'Slider', slides_path %></li>
+        <li><%= link_to 'Cake category', cake_categories_path %></li>
+
+      </ul>
+      <%= button_to 'Logout', logout_path, method: :delete %>
+  <% end %>
+  </div>
+</div>

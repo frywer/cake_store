@@ -1,0 +1,29 @@
+<%= form_for @stuffing_cake, :html => {:multipart => true} do |f| %>
+  <% if @stuffing_cake.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@stuffing_cake.errors.count, "error") %> prohibited this stuffing_cake from being saved:</h2>
+
+      <ul>
+      <% @stuffing_cake.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :image %><br>
+    <%= f.file_field :image %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

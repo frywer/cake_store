@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<div id="store_content">
 <p>
   <strong>Title:</strong>
   <%= @cake_category.title %>
@@ -8,9 +8,21 @@
 
 <h3> Products under this category </h3>
 <% Product.where(cake_category_id: @cake_category.id).each do |product| %>
-    <li> <%= product.title %> </li>
+    <%cache ['product_container', product] do %>
+
+        <div class="product_container">
+          <div class="product_image_content"> <%= image_tag product.product_image_url.to_s  %></div>
+          <h3 class="product_title_style"><%=link_to product.title , product_path(product.id)  %></h3>
+
+          <div class="price_container">
+            <span ><%= (product.price) %> Лей / кг </span>
+          </div>
+        </div>
+    <% end %>
 <% end %>
 
+
+</div>
 <%= link_to "Add Product", new_product_path(:cake_category_id => @cake_category) %>
 
 <%= link_to 'Edit', edit_cake_category_path(@cake_category) %> |

@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
   skip_before_action :authorize
+  before_action :main_slider, :set_cake_category
 
   def new
   end
@@ -18,4 +19,15 @@ class SessionsController < ApplicationController
     session[:user_id] = nil
     redirect_to store_url, notice: "Сеанс работы завершен"
   end
+  private
+
+  def main_slider
+    @slides = Slide.all
+  end
+
+
+  def set_cake_category
+    @cake_categories = CakeCategory.all
+  end
+
 end
