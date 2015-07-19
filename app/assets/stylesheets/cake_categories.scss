@@ -5,6 +5,17 @@
 
 .cake_category_menu_style {
   margin-top: 10px;
+  width: 220px;
+  margin-left: 10px;
+
+  position:relative;
+  background:#fff;
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 
   ul {
 
@@ -24,6 +35,30 @@
     text-decoration: none;
   }
 
+  .lenta_font {
+    width: 160px;
+    border-bottom: solid 2px ;
+    font-family: "Lobster", Arial;
+    //font-style: italic;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
+    color: #7f0d65;
+
+    a:hover {
+      border: none;
+    }
+  }
+
+
+
+}
+
+.cake_category_menu_style:before,
+.cake_category_menu_style:after {
+  content:"";
+  position:absolute;
+  z-index:-2;
 }
 
 #cake_category_index {
