@@ -3,5 +3,6 @@ class AdminController < ApplicationController
     @total_orders = Order.count
       @slides = Slide.all
     @cake_categories = CakeCategory.all
+    @categories = Category.all
   end
 end
