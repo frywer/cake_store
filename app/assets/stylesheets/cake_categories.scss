@@ -4,6 +4,8 @@
 
 
 .cake_category_menu_style {
+  border: solid 1px #ffffff;
+  border-radius: 3px;
   margin-top: 10px;
   width: 220px;
   margin-left: 10px;
@@ -40,16 +42,15 @@
     border-bottom: solid 2px ;
     font-family: "Lobster", Arial;
     //font-style: italic;
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 10px;
     margin-left: 30px;
+    margin-bottom: 0;
+    padding-bottom: 3px;
     color: #7f0d65;
 
-    a:hover {
-      border: none;
-    }
-  }
 
+  }
 
 
 }
@@ -66,4 +67,9 @@
   background-color: #ffffff;
   margin-left: 300px;
 
+}
+
+.cake_index_style {
+  border: solid 1px;
+  width: 200px;
 }

@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   skip_before_action :authorize
-  before_action :main_slider, :set_cake_category
+  before_action  :set_cake_category
 
   def new
   end
@@ -21,13 +21,13 @@ class SessionsController < ApplicationController
   end
   private
 
-  def main_slider
-    @slides = Slide.all
-  end
+
 
 
   def set_cake_category
     @cake_categories = CakeCategory.all
+    @categories = Category.all
+    @slides = Slide.all
   end
 
 end

@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
 
-  before_action :main_slider, :set_cake_category
+  before_action :set_cake_category
   before_action :set_product, only: [:show, :edit, :update, :destroy]
   skip_before_action :authorize, only: [:show]
 
@@ -99,11 +99,11 @@ class ProductsController < ApplicationController
       params.require(:product).permit(:title, :description, :ingridients , :price, :product_image, :cake_category)
     end
 
-  def main_slider
-    @slides = Slide.all
-  end
+
 
   def set_cake_category
     @cake_categories = CakeCategory.all
+    @categories = Category.all
+    @slides = Slide.all
   end
 end

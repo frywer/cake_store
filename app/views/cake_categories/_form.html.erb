@@ -12,6 +12,8 @@
     </div>
   <% end %>
 
+
+      <%= select_tag(:category_id, options_for_select(@category), :prompt => "Выбери категорию!", ) %>
   <div class="field">
     <%= f.label :название_категории %><br>
     <%= f.text_field :title %>

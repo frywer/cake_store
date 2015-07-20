@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  resources :pages
+
+  get 'static_pages/contacts'
+
+  get 'static_pages/prices'
+
+  get 'static_pages/about'
+
+  resources :categories
+
   resources :stuffing_cakes
 
   resources :slides

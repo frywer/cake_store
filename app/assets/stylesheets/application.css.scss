@@ -17,6 +17,11 @@
  */
 
 
+.atent {
+  color: red;
+
+}
+
 .h4_title{
   font-family: "Lobster", Arial;
   color: #7f0d65;
@@ -178,7 +183,7 @@
 
 /// work panel//
 #work_panel {
-  background: #e2be00;
+  background: rgba(226, 190, 0, 0.62);
   font-size: smaller;
 
 }
@@ -192,7 +197,7 @@
   background-color: rgba(0, 0, 0, 0.24);
 
   .shaboo_img_footer {
-    width: 300px;
+    width: 120px;
     float: left;
   }
 

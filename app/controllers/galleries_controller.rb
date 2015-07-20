@@ -81,5 +81,6 @@ class GalleriesController < ApplicationController
   def set_cake_category
     @cake_categories = CakeCategory.all
     @slides = Slide.all
+    @categories = Category.all
   end
 end

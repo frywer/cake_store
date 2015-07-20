@@ -1,0 +1,33 @@
+<% @categories.each do |category|%>
+
+
+    <div class="cake_categories" >
+     <h5> <%=link_to category.title, edit_category_path(category)%><%= link_to 'EDIT', edit_category_path(category), class: "atent" %></h5>
+      <% category.cake_categories.each do |j|%>
+
+      <ul>
+        <li> <%= link_to j.title, edit_cake_category_path(j) %> <%= link_to 'EDIT', edit_cake_category_path(j), class: "atent" %></li>
+      </ul>
+
+      <% end%>
+      <h5 class="add_category"><%= link_to 'Добавить субкатегорию', new_cake_category_path, class: "atent" %></h5>
+      </div>
+    <%end%>
+
+
+    <div class="all_cake_categories">
+      <p>Все категории</p>
+   <% @cake_categories.each do |i|%>
+          <ul>
+            <li><%=link_to i.title, edit_cake_category_path(i)%> <%= link_to 'EDIT', edit_cake_category_path(i), class: "atent" %></li>
+          </ul>
+    <%end%>
+    </div>
+
+
+
+
+<h4 class="atent"><%= link_to 'Добавить категорию', new_category_path %></h4>
+
+
+

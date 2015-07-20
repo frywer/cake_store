@@ -5,7 +5,19 @@
 
 
 
-<%=render "cake_categories/cake_categories"%>
+
+  <div class="cake_category_menu_style">
+    <% @categories.each do |category|%>
+        <p class="lenta_font"><%= category.title %></p>
+          <% category.cake_categories.each do |sub_category|%>
+              <ul>
+                <li> <%= link_to sub_category.title, cake_category_path(sub_category.id) %></li>
+              </ul>
+
+        <%end%>
+    <%end%>
+    <br>
+  </div>
 
 
 
@@ -24,12 +36,10 @@
   <div id="work_panel">
   <% if session[:user_id] %>
       <ul>
-        <li><%= link_to 'Orders', orders_path %></li>
-        <li><%= link_to 'Products', products_path %></li>
-        <li><%= link_to 'Users', users_path %></li>
-        <li><%= link_to 'who bought', products_who_bought_path %></li>
-        <li><%= link_to 'Slider', slides_path %></li>
-        <li><%= link_to 'Cake category', cake_categories_path %></li>
+        <li><%= link_to 'Products', products_path, class: "atent"  %></li>
+        <li><%= link_to 'Users', users_path, class: "atent"  %></li>
+        <li><%= link_to 'Slider', slides_path, class: "atent"  %></li>
+        <li><%= link_to 'Категории', categories_path, class: "atent" %></li>
 
       </ul>
       <%= button_to 'Logout', logout_path, method: :delete %>

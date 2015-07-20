@@ -1,0 +1,46 @@
+// Place all the styles related to the Categories controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.cake_categories{
+  border: solid 4px;
+  float: left;
+  width: 200px;
+  height: 400px;
+  background: #ffffff;
+  margin-left: 30px;
+  margin-top: 5px;
+  border-radius: 3px;
+  border-color: rgba(147, 147, 147, 0.29);
+
+  ul{
+    margin-bottom: 7px;
+  }
+
+
+  h5 {
+    border-bottom: solid 1px;
+  }
+}
+
+.all_cake_categories{
+  border: solid 4px;
+  width: 200px;
+  margin-left: 30px;
+  margin-top: 5px;
+  height: 400px;
+  background: rgba(252, 255, 214, 0.45);
+  border-radius: 3px;
+  border-color: #b3b3b3;
+  float: left;
+  p{
+    margin-bottom: 0px;
+    font-size: 15px;
+  }
+
+
+  ul {
+    margin-bottom: 0px;
+  }
+}

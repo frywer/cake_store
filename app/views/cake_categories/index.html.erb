@@ -2,9 +2,17 @@
 
 <h1>Listing Cake Categories</h1>
 <div id="cake_category_index">
-    <%=render 'cake_categories'%>
+  <div class="cake_index_style" >
+    <h4 class="lenta_font"><%=link_to "Торты:", store_path%></h4>
+    <% @cake_categories.each do |cake_category| %>
+        <ul >
+          <li> <%= link_to cake_category.title, cake_category_path(cake_category.id) %> <%= link_to 'EDIT', edit_cake_category_path(cake_category), class: "atent" %></li>
+        </ul>
+    <% end %>
+    <h5 class="add_category"><%= link_to 'Добавить категорию', new_cake_category_path, class: "atent" %></h5>
+  </div>
 </div>
+<%= link_to 'New Category', new_category_path %>
 
 <br>
 
-<h4 class="add_category"><%= link_to 'Добавить категорию', new_cake_category_path %></h4>

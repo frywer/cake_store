@@ -11,15 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150714173858) do
+ActiveRecord::Schema.define(version: 20150720004725) do
 
   create_table "cake_categories", force: :cascade do |t|
     t.string   "title"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "category_id"
+  end
+
+  add_index "cake_categories", ["category_id"], name: "index_cake_categories_on_category_id"
+
+  create_table "carts", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "carts", force: :cascade do |t|
+  create_table "categories", force: :cascade do |t|
+    t.string   "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -48,6 +57,13 @@ ActiveRecord::Schema.define(version: 20150714173858) do
     t.text     "address"
     t.string   "email"
     t.string   "pay_type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "pages", force: :cascade do |t|
+    t.string   "title"
+    t.text     "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

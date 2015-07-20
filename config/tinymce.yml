@@ -1,0 +1,16 @@
+#theme_advanced_toolbar_location: top
+#theme_advanced_toolbar_align: left
+#theme_advanced_statusbar_location: bottom
+
+
+toolbar:
+  - styleselect | bold italic | undo redo | image media | link | forecolor backcolor emoticons | table
+
+plugins:
+  - image
+  - link
+  - textcolor
+  - table
+  - media
+  - charmap
+

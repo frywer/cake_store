@@ -1,12 +1,12 @@
-<p id="notice"><%= notice %></p>
+
 <div id="store_content">
-<p>
-  <strong>Title:</strong>
-  <%= @cake_category.title %>
-</p>
 
 
-<h3> Products under this category </h3>
+ <h4> Категория: <%= @cake_category.title %></h4>
+
+
+
+
 <% Product.where(cake_category_id: @cake_category.id).each do |product| %>
     <%cache ['product_container', product] do %>
 
@@ -23,7 +23,13 @@
 
 
 </div>
-<%= link_to "Add Product", new_product_path(:cake_category_id => @cake_category) %>
 
-<%= link_to 'Edit', edit_cake_category_path(@cake_category) %> |
-<%= link_to 'Back', cake_categories_path %>
+<% if session[:user_id] %>
+
+    <%= link_to "Add Product", new_product_path(:cake_category_id => @cake_category) %>
+
+    <%= link_to 'Edit', edit_cake_category_path(@cake_category) %> |
+    <%= link_to 'Back', cake_categories_path %>
+<%end %>
+
+

@@ -20,22 +20,25 @@ class CakeCategoriesController < ApplicationController
 
   # GET /cake_categories/new
   def new
+    @category = Category.all.map{|c| [ c.title, c.id ] }
     @cake_categories = CakeCategory.all
     @cake_category = CakeCategory.new
   end
 
   # GET /cake_categories/1/edit
   def edit
+    @category = Category.all.map{|c| [ c.title, c.id ] }
   end
 
   # POST /cake_categories
   # POST /cake_categories.json
   def create
     @cake_category = CakeCategory.new(cake_category_params)
+    @cake_category.category_id = params[:category_id]
 
     respond_to do |format|
       if @cake_category.save
-        format.html { redirect_to @cake_category, notice: 'Cake category was successfully created.' }
+        format.html { redirect_to categories_url, notice: 'Cake category was successfully created.' }
         format.json { render :show, status: :created, location: @cake_category }
       else
         format.html { render :new }
@@ -47,9 +50,10 @@ class CakeCategoriesController < ApplicationController
   # PATCH/PUT /cake_categories/1
   # PATCH/PUT /cake_categories/1.json
   def update
+    @cake_category.category_id = params[:category_id]
     respond_to do |format|
       if @cake_category.update(cake_category_params)
-        format.html { redirect_to @cake_category, notice: 'Cake category was successfully updated.' }
+        format.html { redirect_to categories_url, notice: 'Cake category was successfully updated.' }
         format.json { render :show, status: :ok, location: @cake_category }
       else
         format.html { render :edit }
@@ -63,7 +67,7 @@ class CakeCategoriesController < ApplicationController
   def destroy
     @cake_category.destroy
     respond_to do |format|
-      format.html { redirect_to cake_categories_url, notice: 'Cake category was successfully destroyed.' }
+      format.html { redirect_to categories_url, notice: 'Cake category was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -82,5 +86,6 @@ class CakeCategoriesController < ApplicationController
 
    def set_slide
      @slides = Slide.all
+     @categories = Category.all
    end
 end

@@ -84,5 +84,6 @@ class UsersController < ApplicationController
   def set_cake_category
     @slides = Slide.all
     @cake_categories = CakeCategory.all
+    @categories = Category.all
   end
 end

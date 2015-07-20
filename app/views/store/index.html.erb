@@ -16,13 +16,9 @@
 
          <div class="product_container">
                <div class="product_image_content"> <%= image_tag product.product_image_url.to_s  %></div>
-           <h5 class="product_title_style"><%=link_to product.title , product_path(product.id)  %></h5>
 
            <div class="short_bod"></div>
-
-           <div class="price_container">
-               <span ><%= (product.price) %> Лей / кг </span>
-           </div>
+           <h5 class="product_title_style"><%=link_to product.title , product_path(product.id)  %></h5>
           </div>
 
         <% end %>

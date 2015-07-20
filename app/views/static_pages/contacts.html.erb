@@ -1,0 +1,7 @@
+<div>
+  <%=@page.content.html_safe %>
+</div>
+
+<% if session[:user_id] %>
+    <%= link_to 'Редактировать', edit_page_path(@page), class: "atent" %>
+<%end %>

@@ -133,17 +133,18 @@
 
     background-color: #ffffff;
     margin-top: 18px;
-    border: solid 0.5px rgba(3, 0, 1, 0.44);
+    border: solid 0.5px rgb(255, 255, 255);
     border-radius: 2px;
     float: left;
     margin-left: 8px;
     width: 240px;
     padding-left: 4px;
-    height: 420px;
+    height: 400px;
 
 
 
     .short_bod {
+      margin-top: 5px;
       background-image: url("sep.png");
       background-repeat: no-repeat;
       margin-left: 70px;

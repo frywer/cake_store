@@ -11,8 +11,8 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery-ui/effect-blind
 //= require jquery_ujs
+//= require tinymce-jquery
 //= require foundation
 //= require turbolinks
 //= require_tree .
