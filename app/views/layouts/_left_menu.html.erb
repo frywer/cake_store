@@ -11,7 +11,7 @@
         <p class="lenta_font"><%= category.title %></p>
           <% category.cake_categories.each do |sub_category|%>
               <ul>
-                <li> <%= link_to sub_category.title, cake_category_path(sub_category.id) %></li>
+                <li><%= image_tag("small_tort.png")%> <%= link_to sub_category.title, cake_category_path(sub_category.id) %></li>
               </ul>
 
         <%end%>
