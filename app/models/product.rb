@@ -3,7 +3,16 @@ class Product < ActiveRecord::Base
   belongs_to :cake_category
   has_many :line_items
   has_many :orders, through: :line_items
-  mount_uploader :product_image, ImageUploader
+  #mount_uploader :product_image, ImageUploader
+
+  has_attached_file :product_image,
+                    :storage => :dropbox,
+                    :dropbox_credentials => Rails.root.join("config/dropbox.yml")
+
+  validates_attachment :product_image, content_type: { content_type: ["image/jpg", "image/jpeg", "image/png", "image/gif"] }
+  validates_attachment_file_name :product_image, :matches => [/png\Z/, /jpe?g\Z/, /gif\Z/]
+  do_not_validate_attachment_file_type :product_image
+
 
   before_destroy :ensure_not_referenced_by_any_line_item
 

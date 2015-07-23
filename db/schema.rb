@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150720004725) do
+ActiveRecord::Schema.define(version: 20150723121329) do
 
   create_table "cake_categories", force: :cascade do |t|
     t.string   "title"
@@ -81,12 +81,16 @@ ActiveRecord::Schema.define(version: 20150720004725) do
   create_table "products", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
-    t.decimal  "price",            precision: 8, scale: 2
-    t.datetime "created_at",                               null: false
-    t.datetime "updated_at",                               null: false
+    t.decimal  "price",                      precision: 8, scale: 2
+    t.datetime "created_at",                                         null: false
+    t.datetime "updated_at",                                         null: false
     t.string   "product_image"
     t.integer  "cake_category_id"
     t.text     "ingridients"
+    t.string   "product_image_file_name"
+    t.string   "product_image_content_type"
+    t.integer  "product_image_file_size"
+    t.datetime "product_image_updated_at"
   end
 
   add_index "products", ["cake_category_id"], name: "index_products_on_cake_category_id"
@@ -95,8 +99,12 @@ ActiveRecord::Schema.define(version: 20150720004725) do
     t.string   "title"
     t.string   "slider_image"
     t.text     "slider_content"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+    t.string   "slider_image_file_name"
+    t.string   "slider_image_content_type"
+    t.integer  "slider_image_file_size"
+    t.datetime "slider_image_updated_at"
   end
 
   create_table "stuffing_cakes", force: :cascade do |t|

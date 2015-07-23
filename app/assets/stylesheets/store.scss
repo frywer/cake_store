@@ -38,10 +38,7 @@
 
 }
 #slider .slides{
-  ul {
-    list-style-type: none;
-  }
-
+  list-style-type: none;
   display: block;
   width: 6000px;
   height: 200px;
@@ -200,7 +197,7 @@
   }
 
   .product_container:hover {
-    box-shadow: none;
+    border: solid 1px rgba(127, 13, 101, 0.54);
   }
 
 
