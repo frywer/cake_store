@@ -11,7 +11,7 @@
     <%cache ['product_container', product] do %>
 
         <div class="product_container">
-          <div class="product_image_content"> <%= image_tag product.product_image_url.to_s  %></div>
+          <div class="product_image_content"> <%= image_tag product.product_image.to_s  %></div>
           <h3 class="product_title_style"><%=link_to product.title , product_path(product.id)  %></h3>
 
           <div class="price_container">
