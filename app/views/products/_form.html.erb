@@ -1,5 +1,5 @@
 <div class="form_for" >
-<%= form_for(@product) do |f| %>
+<%= form_for(@product, multipart: true) do |f| %>
   <% if @product.errors.any? %>
     <div id="error_explanation">
 

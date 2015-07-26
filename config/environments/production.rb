@@ -48,6 +48,16 @@ Rails.application.configure do
   # when problems arise.
   config.log_level = :debug
 
+  config.paperclip_defaults = {
+      :storage => :s3,
+      :s3_credentials => {
+          :bucket => ENV['frywer'],
+          :access_key_id => ENV['AKIAIVPCLFOVXB43X27Q'],
+          :secret_access_key => ENV['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']
+      }
+  }
+
+
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
 
