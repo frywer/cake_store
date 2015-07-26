@@ -52,8 +52,8 @@ Rails.application.configure do
       :storage => :s3,
       :s3_credentials => {
           :bucket => ENV['frywer'],
-          :access_key_id => ENV['AKIAIVPCLFOVXB43X27Q'],
-          :secret_access_key => ENV['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']
+          :access_key_id => ENV['AKIAITWQ62YJ623WLY4Q'],
+          :secret_access_key => ENV['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']
       }
   }
 
