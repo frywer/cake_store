@@ -5,25 +5,17 @@ class Product < ActiveRecord::Base
   has_many :orders, through: :line_items
   #mount_uploader :product_image, ImageUploader
 
-  #has_attached_file :product_image,
-   #                 :storage => :dropbox,
-    #                :dropbox_credentials => Rails.root.join("config/dropbox.yml")
+  has_attached_file :product_image,
+                    :storage => :dropbox,
+                    :dropbox_credentials => Rails.root.join("config/dropbox.yml")
 
-  #validates_attachment :product_image, content_type: { content_type: ["image/jpg", "image/jpeg", "image/png", "image/gif"] }
-  #validates_attachment_file_name :product_image, :matches => [/png\Z/, /jpe?g\Z/, /gif\Z/]
-  #do_not_validate_attachment_file_type :product_image
+  validates_attachment :product_image, content_type: { content_type: ["image/jpg", "image/jpeg", "image/png", "image/gif"] }
+  validates_attachment_file_name :product_image, :matches => [/png\Z/, /jpe?g\Z/, /gif\Z/]
+  do_not_validate_attachment_file_type :product_image
 
 
 
-  # This method associates the attribute ":avatar" with a file attachment
-  has_attached_file :product_image, styles: {
-                                      thumb: '100x100>',
-                                      square: '200x200#',
-                                      medium: '300x300>'
-                                  }
 
-  # Validate the attached image is image/jpg, image/png, etc
-  validates_attachment_content_type :product_image, :content_type => /\Aimage\/.*\Z/
 
 
   before_destroy :ensure_not_referenced_by_any_line_item

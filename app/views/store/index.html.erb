@@ -15,13 +15,12 @@
         <%cache ['product_container', product] do %>
 
          <div class="product_container">
-           <% if product.product_image == nil %>
-               <%= product.product_image = image_tag "small_tort.png" %>
 
-           <%else%>
-               <div class="product_image_content"> <%= image_tag product.product_image.url  %></div>
 
-           <%end %>
+
+               <div class="product_image_content"> <%= image_tag product.product_image.to_s  %></div>
+
+
 
 
            <div class="short_bod"></div>
