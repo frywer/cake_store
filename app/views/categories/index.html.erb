@@ -2,11 +2,11 @@
 
 
     <div class="cake_categories" >
-     <h5> <%=link_to category.title, edit_category_path(category)%><%= link_to 'EDIT', edit_category_path(category), class: "atent" %></h5>
+     <h5> <%=link_to category.title, edit_category_path(category)%><%= link_to 'EDIT', edit_category_path(category), class: "atent" %>|<%= link_to 'DELETE', category, class: "atent", method: :delete, data: {confirm: 'Are you sure?'}%></h5>
       <% category.cake_categories.each do |j|%>
 
       <ul>
-        <li> <%= link_to j.title, edit_cake_category_path(j) %> <%= link_to 'EDIT', edit_cake_category_path(j), class: "atent" %></li>
+        <li> <%= link_to j.title, edit_cake_category_path(j) %> <%= link_to 'EDIT', edit_cake_category_path(j), class: "atent" %>|<%= link_to 'DELETE', j, class: "atent", method: :delete, data: {confirm: 'Are you sure?'}%></li>
       </ul>
 
       <% end%>
@@ -20,7 +20,7 @@
       <p>Все категории</p>
    <% @cake_categories.each do |i|%>
           <ul>
-            <li><%=link_to i.title, edit_cake_category_path(i)%> <%= link_to 'EDIT', edit_cake_category_path(i), class: "atent" %></li>
+            <li><%=link_to i.title, edit_cake_category_path(i)%> <%= link_to 'EDIT', edit_cake_category_path(i), class: "atent" %>|<%= link_to 'DELETE', i, class: "atent", method: :delete, data: {confirm: 'Are you sure?'}%></li>
           </ul>
     <%end%>
     </div>
