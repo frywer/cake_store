@@ -8,8 +8,8 @@ Rails.application.load_tasks
 namespace :heroku do
   desc 'restarts all the heroku dynos so we can control when they restart'
   task :implode do
-    Heroku::API
-        new(username: ENV['marangoz.frywer@gmail.com'], password: ENV['GozMoz7333']).
+    Heroku::API.
+        (username: ENV['marangoz.frywer@gmail.com'], password: ENV['GozMoz7333']).
         post_ps_restart(ENV["shaboo"])
   end
 end
