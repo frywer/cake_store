@@ -10,9 +10,9 @@
 
 <h4 >Все торты:</h4>
 
-<% cache ['store_content', Product.latest] do %>
+
    <% @products.each do |product| %>
-        <%cache ['product_container', product] do %>
+
 
          <div class="product_container">
 
@@ -27,8 +27,7 @@
            <h5 class="product_title_style"><%=link_to product.title , product_path(product.id)  %></h5>
           </div>
 
-        <% end %>
-    <% end %>
+
 <% end %>
 </div>
 
