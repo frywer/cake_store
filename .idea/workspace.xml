@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2c65c24-c25b-48c9-971e-5dc40f3d0037" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cake_store.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,8 +53,8 @@
       <file leaf-file-name="Rakefile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Rakefile">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35181236" vertical-offset="0" max-vertical-offset="469">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.41577825" vertical-offset="0" max-vertical-offset="469">
+              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -768,8 +765,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Rakefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35181236" vertical-offset="0" max-vertical-offset="469">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.41577825" vertical-offset="0" max-vertical-offset="469">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
           <folding />
         </state>
       </provider>
