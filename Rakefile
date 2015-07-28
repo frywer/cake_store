@@ -8,6 +8,7 @@ Rails.application.load_tasks
 namespace :heroku do
   desc 'restarts all the heroku dynos so we can control when they restart'
   task :implode do
+    Heroku::API.
         post_ps_restart(ENV["shaboo"])
   end
 end
