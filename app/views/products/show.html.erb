@@ -1,7 +1,8 @@
 
+<p id="notice"><%= notice %></p>
 <div class="product_id_content">
 
-<p id="notice"><%= notice %></p>
+
 
 
 
@@ -19,14 +20,26 @@
 
 
 
-
-
-
-
-
-
   <% if session[:user_id] %>
     <%= link_to 'Back', products_path, class: "atent" %>
 <%= link_to 'Edit', edit_product_path(@product),class: "atent" %>
 <%end %>
+
 </div>
+
+<div class="products_line_footer">
+
+<h4>Похожие торты:</h4>
+
+    <% @products.each do |product|%>
+      <%= link_to(product) do %>
+        <div class="product_block_show">
+          <%=image_tag product.product_image%>
+          <h6><%= product.title%></h6>
+        </div>
+          <%end%>
+      <%end%>
+
+</div>
+<div style="clear: both"></div>
+

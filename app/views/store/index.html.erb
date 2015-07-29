@@ -13,23 +13,19 @@
 
    <% @products.each do |product| %>
 
-
-         <div class="product_container">
-
-
-
-               <div class="product_image_content"> <%= image_tag product.product_image.to_s  %></div>
-
-
-
-
+            <%= link_to(product) do %>
+            <div class="product_container">
+           <div class="product_image_content"> <%= image_tag product.product_image.to_s  %></div>
            <div class="short_bod"> <%= image_tag "sep.png"%></div>
-           <h5 class="product_title_style"><%=link_to product.title , product_path(product.id)  %></h5>
+           <h5 class="product_title_style"><%= product.title  %></h5>
+              <p><%= truncate product.description, length: 140 %></p>
           </div>
+          <%end%>
 
 
 <% end %>
 </div>
+
 
    <%= will_paginate @products,previous_label: h("<"), next_label: h(">") %>
 

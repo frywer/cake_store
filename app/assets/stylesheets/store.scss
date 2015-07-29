@@ -112,7 +112,7 @@
   width: 755px;
 
   h4 {
-    font-family: "Lobster", Arial;
+    font-family: "Lobster";
     color: #7f0d65;
 
   }
@@ -142,7 +142,7 @@
 
     .short_bod {
       margin-top: 5px;
-      background-image: url("sep.png");
+      //background-image: url("sep.png");
       background-repeat: no-repeat;
       margin-left: 70px;
       //width: 300px;
@@ -150,8 +150,10 @@
 
     }
 
-    h3 {
-      font-size: large;
+    .product_title_style {
+      font-family: "rubXZTeC";
+      margin-bottom: 0;
+      font-size: 20px;
     }
 
     .product_image_content {
@@ -159,11 +161,9 @@
       margin-top: 5px;
     }
 
-    .price_container{
-      font-size: 20px;
-      font-family: "Lobster", Arial;
 
-
+    p {
+      color: #000000;
     }
   }
 

@@ -46,9 +46,26 @@
 
 //product id content //
 .product_id_content {
-  .product_image {
-    width: 300px;
-    height: 400px;
+  padding: 7px;
+
+  float: left;
+  width: 760px;
+  margin-top: 8px;
+
+  //shadow box //
+  position:relative;
+  background:#fff;
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+
+
+.product_image {
+    width: 350px;
     border: solid 2px #7f0d65;
     border-radius: 3px;
     float: left;
@@ -56,23 +73,26 @@
   .cake_description {
     margin-top: 10px;
     float: left;
-    width: 450px;
+    width: 380px;
     margin-left: 10px;
 
   }
 }
-.product_id_price {
-  margin-top: 10px;
-  margin-left: 30px;
-  float: left;
-  font-family: "Lobster", Arial;
-  font-size: 20px;
+
+.product_id_content:before,
+.product_id_content:after {
+  content:"";
+  position:absolute;
+  z-index:-2;
 }
 
+
+
   .product_id_title {
-    width: 450px;
+    width: 380px;
     margin-left: 10px;
     font-size: 30px;
+    margin-top: 10px;
     float: left;
     font-family: "Lobster", Arial;
     color: #7f0d65;
@@ -86,15 +106,61 @@
     padding-right: 80px;
   }
 
-  .cake_ingridients{
-    margin-top: 40px;
-    float: right;
-    width: 460px;
-    padding: 10px;
+
+.products_line_footer{
+  padding-left: 15px;
+  margin-top: 100px;
+  height: 300px;
+  width: 760px;
+  float: left;
+
+  h4{
+    font-family: "Lobster";
+    color: #7f0d65;
   }
 
-  .ingridients_title{
-    font-family: "Lobster", Arial;
-    color: #7f0d65;
-    font-size: 25px;
+
+  img{
+    width: 165px;
+    margin-left: 5px;
+    margin-top: 5px;
   }
+
+  .product_block_show{
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 175px;
+    height: 220px;
+    float: left;
+
+    h6{
+      color: #7f0d65;
+      font-family: "rubXZTeC" ;
+      margin-left: 5px;
+
+    }
+
+    //shadow box//
+    position:relative;
+    background:#fff;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  }
+}
+.product_block_show:before,
+.product_block_show:after {
+  content:"";
+  position:absolute;
+  z-index:-2;
+}
+
+.product_block_show:hover{
+  border: solid 0.5px rgba(127, 13, 101, 0.65);
+  border-radius: 3px;
+}
+
+
