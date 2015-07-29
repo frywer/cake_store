@@ -12,8 +12,9 @@
     </div>
   <% end %>
 
-
+      <div style="background-color: rgba(255, 0, 0, 0.27)"> <h4 class="pozor"> Выберите категорию!!!</h4>
       <%= select_tag(:category_id, options_for_select(@category), :prompt => "Выбери категорию!", ) %>
+        </div>
   <div class="field">
     <%= f.label :название_категории %><br>
     <%= f.text_field :title %>

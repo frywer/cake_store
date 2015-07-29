@@ -16,7 +16,9 @@
       </ul>
     </div>
   <% end %>
+     <div style="background-color: rgba(255, 0, 0, 0.27)"> <h4 class="pozor"> Выберите категорию!!!</h4>
     <%= select_tag(:cake_category_id, options_for_select(@cake_category), :prompt => "Выбери категорию!") %>
+     </div>
   <div class="field">
     <%= f.label :Название_торта %>
     <%= f.text_field :title %>
@@ -24,10 +26,6 @@
   <div class="field">
     <%= f.label :Описание %>
     <%= f.text_area :description, rows: 6 %>
-  </div>
-  <div class="field">
-    <%= f.label :Ингридиенты %>
-    <%= f.text_area :ingridients, rows: 7 %>
   </div>
     <div class="field">
       <%= f.label :Картинка %>
