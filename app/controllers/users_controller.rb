@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
   before_action :set_cake_category
+  skip_before_action :authorize
 
 
   # GET /users
