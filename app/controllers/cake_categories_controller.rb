@@ -20,21 +20,22 @@ class CakeCategoriesController < ApplicationController
 
   # GET /cake_categories/new
   def new
-    @category = Category.all.map{|c| [ c.title, c.id ] }
+    @category = Category.all
     @cake_categories = CakeCategory.all
     @cake_category = CakeCategory.new
   end
 
   # GET /cake_categories/1/edit
   def edit
-    @category = Category.all.map{|c| [ c.title, c.id ] }
+    @category = Category.all
   end
 
   # POST /cake_categories
   # POST /cake_categories.json
   def create
+    @category = Category.all
     @cake_category = CakeCategory.new(cake_category_params)
-    @cake_category.category_id = params[:category_id]
+    #@cake_category.category_id = params[:category_id]
 
     respond_to do |format|
       if @cake_category.save
@@ -81,7 +82,7 @@ class CakeCategoriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def cake_category_params
-      params.require(:cake_category).permit(:title)
+      params.require(:cake_category).permit(:title, :category_id)
     end
 
    def set_slide

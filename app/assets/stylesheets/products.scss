@@ -3,8 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .products {
-  float: right;
-  width: 760px;
+  //float: right;
+  //width: 760px;
   table{
     border-collapse: collapse;
   }
@@ -14,7 +14,7 @@
   }
 
   .list_image {
-    width: 80px;
+    width: 100px;
     height: 90px;
   }
 
@@ -49,11 +49,10 @@
   padding: 7px;
 
   float: left;
-  width: 760px;
+  //width: 760px;
   margin-top: 8px;
 
   //shadow box //
-  position:relative;
   background:#fff;
   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -110,9 +109,8 @@
 .products_line_footer{
   padding-left: 15px;
   margin-top: 100px;
-  height: 300px;
-  width: 760px;
-  float: left;
+  clear: both;
+
 
   h4{
     font-family: "Lobster";

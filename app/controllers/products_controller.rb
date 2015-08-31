@@ -13,19 +13,19 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
-    @products = Product.all.page(params[:page]).per_page(8)
+    @products = Product.all.page(params[:page]).per_page(10)
   end
 
   # GET /products/new
   def new
 
    @product = Product.new
-   @cake_category = CakeCategory.all.map{|c| [ c.title, c.id ] }
+   @cake_category = CakeCategory.all
   end
 
   # GET /products/1/edit
   def edit
-    @cake_category = CakeCategory.all.map{|c| [ c.title, c.id ] }
+    @cake_category = CakeCategory.all
   end
 
   # POST /products
@@ -33,7 +33,7 @@ class ProductsController < ApplicationController
   def create
 
     @product = Product.new(product_params)
-    @product.cake_category_id = params[:cake_category_id]
+    #@product.cake_category_id = params[:cake_category_id]
 
 
     respond_to do |format|
@@ -97,7 +97,7 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:title, :description, :ingridients , :price, :product_image, :cake_category)
+      params.require(:product).permit(:title, :description, :ingridients , :price, :product_image, :cake_category_id)
     end
 
 

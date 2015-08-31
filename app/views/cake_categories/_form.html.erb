@@ -11,16 +11,18 @@
       </ul>
     </div>
   <% end %>
+      <fieldset class="forms_fieldset_style">
+        <legend>Новая субкатегория</legend>
+       <h4 class="pozor"> Выберите категорию!!!</h4>
+      <%= collection_select(:cake_category, :category_id,  Category.order(:title) , :id, :title, include_blank: true )%>
 
-      <div style="background-color: rgba(255, 0, 0, 0.27)"> <h4 class="pozor"> Выберите категорию!!!</h4>
-      <%= select_tag(:category_id, options_for_select(@category), :prompt => "Выбери категорию!", ) %>
-        </div>
   <div class="field">
-    <%= f.label :название_категории %><br>
+    <%= f.label :Название_категории %>
     <%= f.text_field :title %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
+        </fieldset>
 <% end %>
 </div>

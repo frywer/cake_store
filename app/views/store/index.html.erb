@@ -6,27 +6,25 @@
 
 
 
-<div id="store_content">
+<!-- Warming Up -->
+<link href='http://fonts.googleapis.com/css?family=Buenard:700' rel='stylesheet' type='text/css'>
+<script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
 
-<h4 >Все торты:</h4>
-
-
-   <% @products.each do |product| %>
-
-            <%= link_to(product) do %>
-            <div class="product_container">
-           <div class="product_image_content"> <%= image_tag product.product_image.to_s  %></div>
-           <div class="short_bod"> <%= image_tag "sep.png"%></div>
-           <h5 class="product_title_style"><%= product.title  %></h5>
-              <p><%= truncate product.description, length: 140 %></p>
-          </div>
-          <%end%>
-
-
-<% end %>
-</div>
-
-
-   <%= will_paginate @products,previous_label: h("<"), next_label: h(">") %>
-
+<!--Video Section-->
+<!--Video Section-->
+<section class="content-section video-section">
+  <div class="pattern-overlay">
+    <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=uPA47phF0OU',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Full Width Video</h1>
+          <h3>Enjoy Adding Full Screen Videos to your Page Sections</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Video Section Ends Here-->
+<!--Video Section Ends Here-->
 

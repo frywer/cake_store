@@ -12,7 +12,7 @@
 
     <td class="list_description">
       <dl>
-        <dt><%= product.title %></dt>
+        <dt><%= product.title %> <%= product.cake_category_id%></dt>
         <dd><%= truncate(strip_tags(product.description), length: 80) %></dd>
       </dl>
     </td>

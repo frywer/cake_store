@@ -1,6 +1,7 @@
 class CategoriesController < ApplicationController
   before_action :set_category, only: [:show, :edit, :update, :destroy]
   before_action :main_slider
+  skip_before_action :authorize, only: [:show]
 
   # GET /categories
   # GET /categories.json
@@ -69,7 +70,7 @@ class CategoriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def category_params
-      params.require(:category).permit(:title)
+      params.require(:category).permit(:title, :image, :description)
     end
 
   def main_slider

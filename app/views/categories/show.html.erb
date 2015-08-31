@@ -1,9 +1,59 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @category.title %>
-</p>
+<div id="store_content">
+
+
+    <div class="border_title">
+        <h1 class="category_main_title"><%= @category.title %></h1>
+
+
+  <div class="category_header">
+    <div class="content_header_image"><%= image_tag @category.image %></div>
+    <div class="content_header_category"><p><%= @category.description %></p></div>
+    <div style="clear: both"></div>
+
+  </div>
+
+      </div>
+
+
+
+
+<% @category.cake_categories.each do |sub_category|%>
+
+      <fieldset>
+        <legend>
+          <a name="<%=sub_category.id%>"></a>
+          <%= sub_category.title%>
+        </legend>
+
+
+
+
+
+
+
+
+      <% sub_category.products.each do |product|%>
+        <%= link_to(product) do %>
+            <div class="product_container">
+              <div class="product_image_content"> <%= image_tag product.product_image.to_s  %></div>
+              <div class="short_bod"> <%= image_tag "sep.png"%></div>
+              <h5 class="product_title_style"><%= product.title  %></h5>
+            </div>
+        <%end%>
+
+
+      <%end%>
+      </fieldset>
+
+       <div style="clear: both"></div>
+
+
+
+<%end%>
 
 <%= link_to 'Edit', edit_category_path(@category) %> |
 <%= link_to 'Back', categories_path %>
+
+</div>

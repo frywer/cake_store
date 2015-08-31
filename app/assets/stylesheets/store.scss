@@ -9,20 +9,27 @@
   font-family: "Lobster";
    src: url('Lobster.ttf');
 }
-
-
-#phone_contact {
-  float: left;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  p {
-    font-size: 16px;
-    margin-bottom: 3px;
-  }
-  img{
-    width: 24px;
-  }
+@font-face {
+  font-family: "sladkoeshka";
+  src: url("ubx3LmCe.ttf");
 }
+
+@font-face {
+  font-family: "rubXZTeC";
+  src: url("rubXZTeC.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu-L";
+  src: url("Ubuntu-L.ttf");
+}
+
+@font-face {
+  font-family: "Lt4";
+  src: url("LT4a57cN.ttf");
+}
+
+
 
 //slider//
 
@@ -99,6 +106,7 @@
       border-top: 1px dotted #595;
       border-bottom: 1px dotted #595;
       margin-bottom: 10px;
+
     }
   }
 }
@@ -108,13 +116,94 @@
 // main  store_content//
 
 #store_content {
-  float: right;
-  width: 755px;
+  
+  .border_title {
+    border-radius: 5px;
 
-  h4 {
-    font-family: "Lobster";
-    color: #7f0d65;
+     //Shadow/////////////////////////////////
+    background:#fff;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 
+
+    .category_main_title {
+      //width: 600px;
+      margin: auto;
+      text-align: center;
+      font-family: Lt4;
+
+    }
+  }
+
+  .border_title:before,
+  .border_title:after {
+    content:"";
+    position:absolute;
+    z-index:-2;
+  }
+
+  .category_block{
+    border: solid 1px;
+  }
+
+.category_header{
+  margin-top: 30px;
+
+  .content_header_image {
+    float: left;
+
+    img {
+      width: 350px;
+    }
+  }
+  .content_header_category{
+    width: 600px;
+    float: left;
+    padding-top: 30px;
+  }
+
+  p{
+
+    font-size: 20px;
+    font-family: rubXZTeC;
+    line-height: 25px;
+  }
+}
+  fieldset {
+    border: solid 2px;
+    border-color: #ffffff;
+    border-radius: 5px;
+    padding: 0 0 10px 0 !important;
+
+
+      position:relative;
+      background:#fff;
+      -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+      box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+
+
+
+    legend {
+      margin-left: 30px;
+      color: #7f0d65;
+      margin-bottom: 20px;
+      background-image: url("dimension.png");
+      background-attachment: fixed ;
+     // background-repeat: repeat-x;
+      font-family: "sladkoeshka";
+      font-size: 50px;
+      font-weight: inherit;
+
+    }
   }
 
   .product_container {
@@ -136,7 +225,9 @@
     margin-left: 8px;
     width: 240px;
     padding-left: 4px;
-    height: 400px;
+    height: 300px;
+
+
 
 
 
@@ -202,6 +293,8 @@
 
 
 
+
+
 }
 // main  store_content//
 
@@ -253,3 +346,42 @@
       }
     }
   }
+
+
+//===================Видео+++++++++++++++++
+
+
+
+  /* Incase of overlay problems just increase the min-height*/
+.video-section .pattern-overlay {
+  margin-top: 200px;
+  background-color: rgba(71, 71, 71, 0.59);
+  padding: 110px 0 32px;
+  min-height: 496px;
+  /* Incase of overlay problems just increase the min-height*/
+}
+.video-section h1, .video-section h3{
+  text-align:center;
+  color:#fff;
+}
+.video-section h1{
+  font-size:110px;
+  font-family: 'Buenard', serif;
+  font-weight:bold;
+  text-transform: uppercase;
+  margin: 40px auto 0px;
+  text-shadow: 1px 1px 1px #000;
+  -webkit-text-shadow: 1px 1px 1px #000;
+  -moz-text-shadow: 1px 1px 1px #000;
+}
+.video-section h3{
+  font-size: 25px;
+  font-weight:lighter;
+  margin: 0px auto 15px;
+}
+.video-section .buttonBar{display:none;}
+.player {font-size: 1px;}
+
+
+
+
