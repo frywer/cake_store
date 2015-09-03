@@ -1,3 +1,28 @@
 // Place all the styles related to the Admin controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.admin_controller{
+  background-color: #4eccff;
+  width:135px;
+
+  position: fixed;
+  ul{
+
+    margin-left: 0px;
+    list-style-type: none;
+    li{
+      margin-top: 5px;
+      padding-bottom: 5px;
+      margin-bottom: 3px;
+      border-bottom: solid 2px #ffffff;
+      a{
+        color: #ffffff;
+      }
+      a:hover{
+        color: #676662;
+      }
+    }
+  }
+}

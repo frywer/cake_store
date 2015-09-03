@@ -1,5 +1,17 @@
 
-<h4 class="atent"><%= link_to 'Новый товар ', new_product_path%></h4>
+
+
+
+<div class="product_create_form">
+<%= render "products/form"%>
+</div>
+
+
+
+
+
+
+
 <div class="products">
 
 <table>
@@ -12,7 +24,9 @@
 
     <td class="list_description">
       <dl>
-        <dt><%= product.title %> <%= product.cake_category_id%></dt>
+        <dt><%= product.title %></dt>
+
+
         <dd><%= truncate(strip_tags(product.description), length: 80) %></dd>
       </dl>
     </td>
@@ -26,8 +40,7 @@
   </tr>
       <%end%>
 </table>
-
-<br/>
-
+  <div style="clear: both"></div>
+  <br>
   <br>
 </div>

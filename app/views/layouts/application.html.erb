@@ -10,6 +10,15 @@
 </head>
  <body>
 
+ <% if session[:user_id] %>
+ <div class="admin_controller">
+   <ul>
+     <li><%=link_to "Добавить продукт", paintings_path%></li>
+     <li><%=link_to "Пользватели", users_path%></li>
+     <li><%=link_to "Категории", categories_path%></li>
+   </ul>
+ </div>
+ <%end %>
 
 
    <div id="banner">
@@ -57,7 +66,7 @@
      <%= yield %>
 
 
-     <%= render "layouts/round_blocks"%>
+
 
    </div>
    <div style="clear: both"></div>

@@ -7,7 +7,8 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+    @product = Product.new
+    @products = Product.order("created_at DESC")
   end
 
   # GET /products/1
@@ -32,16 +33,17 @@ class ProductsController < ApplicationController
   # POST /products.json
   def create
 
+    @products = Product.order("created_at DESC")
     @product = Product.new(product_params)
     #@product.cake_category_id = params[:cake_category_id]
 
 
     respond_to do |format|
       if @product.save
-        format.html { redirect_to @product, notice: 'Product was successfully created.' }
+        format.html { redirect_to products_url, notice: 'Product was successfully created.' }
         format.json { render :show, status: :created, location: @product }
       else
-        format.html { render :new }
+        format.html { render :index }
         format.json { render json: @product.errors, status: :unprocessable_entity }
       end
     end
@@ -53,7 +55,7 @@ class ProductsController < ApplicationController
     @product.cake_category_id = params[:cake_category_id]
     respond_to do |format|
       if @product.update(product_params)
-        format.html { redirect_to @product, notice: 'Product was successfully updated.' }
+        format.html { redirect_to products_url, notice: 'Product was successfully updated.' }
         format.json { render :show, status: :ok, location: @product }
       else
         format.html { render :edit, notice: 'Product was successfully updated.'}

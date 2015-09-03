@@ -3,8 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .products {
-  //float: right;
-  //width: 760px;
+
   table{
     border-collapse: collapse;
   }
@@ -98,11 +97,18 @@
   }
 
 
-  .form_for {
-    width: 760px;
-    float: right;
-    padding-left: 10px;
-    padding-right: 80px;
+  .product_create_form{
+
+
+    .form_left_part{
+      width: 470px;
+      float: left;
+    }
+    .form_right_part{
+      margin-left: 10px;
+      width: 470px;
+      float: left;
+    }
   }
 
 

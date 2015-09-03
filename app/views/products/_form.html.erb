@@ -16,31 +16,41 @@
       </ul>
     </div>
   <% end %>
+
       <fieldset class="forms_fieldset_style">
         <legend>New cake</legend>
+        <div class="form_left_part">
+
       <h4> Выберите категорию!!!</h4>
       <%= collection_select(:product, :cake_category_id,  CakeCategory.order(:title) , :id, :title, include_blank: true )%>
 
-  <div class="field">
-    <%= f.label :Название_торта %>
-    <%= f.text_field :title %>
-  </div>
+           <div class="field">
+            <%= f.label :Название_торта %>
+            <%= f.text_field :title %>
+          </div>
+
+          <div class="field">
+            <%= f.label :Картинка %>
+            <%= f.file_field :product_image %>
+          </div>
+
+
+      </div>
+
+      <div class="form_right_part">
   <div class="field">
     <%= f.label :Описание %>
     <%= f.text_area :description, rows: 6 %>
   </div>
-    <div class="field">
-      <%= f.label :Картинка %>
-      <p class="pozor">555x800</p>
-      <%= f.file_field :product_image %>
-    </div>
-  <div class="field">
+
+  <div class="field" style="width: 100px">
     <%= f.label :Цена %>
     <%= f.text_field :price %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class:"button tiny" %>
   </div>
+      </div>
           </fieldset>
 <% end %>
 </div>

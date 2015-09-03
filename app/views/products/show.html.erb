@@ -16,7 +16,6 @@
 
 
   <% if session[:user_id] %>
-    <%= link_to 'Back', products_path, class: "atent" %>
 <%= link_to 'Edit', edit_product_path(@product),class: "atent" %>
 <%end %>
 
@@ -42,6 +41,6 @@
 </div>
 
 
-
+<%= render "layouts/round_blocks"%>
 
 
