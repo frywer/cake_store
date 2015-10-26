@@ -28,34 +28,7 @@
 
 
 
-   <div id="lenta_menu">
-   <div class="main_menu">
-
-
-       <ul id="ddmenu">
-         <li class="limenu">
-           <%= link_to "Контакты", static_pages_contacts_path%>
-         </li>
-
-         <li class="limenu"><%= link_to "Цены", static_pages_prices_path%></li>
-
-
-         <% @categories.each do |category|%>
-         <li class="limenu">
-           <%= link_to category.title, category%>
-           <ul>
-             <% category.cake_categories.each do |sub_category|%>
-             <li><%= link_to sub_category.title, category_path(sub_category.category, anchor: sub_category.id) %></li>
-
-                 <%end%>
-           </ul>
-         </li>
-             <%end%>
-
-       </ul>
-     </div>
-
-   </div>
+ <%=render("layouts/main_menu_lenta")%>
 
 
 

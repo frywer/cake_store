@@ -1,19 +1,28 @@
 <p id="notice"><%= notice %></p>
 
+
+
+
+
+
+
+
 <div id="store_content">
 
 
     <div class="border_title">
         <h1 class="category_main_title"><%= @category.title %></h1>
 
+      <ul class="bxslider">
+        <li><img src="http://patacakesurrey.co.uk/wp-content/uploads/2015/02/slider1.png" title="Funky roots" /></li>
+        <li><img src="http://www.ilovebloomsburys.com/images/slides/10.png" title="The long and winding road" /></li>
+        <li><img src="http://www.rewardsnetwork.com/wp-content/uploads/2015/09/OctNov_main4.jpg" title="Happy trees" /></li>
+        <li><img src="https://sylvialim.files.wordpress.com/2012/06/cropped-strawberry20desserts.jpg" title="Happy trees" /></li>
+      </ul>
 
-  <div class="category_header">
-    <div class="content_header_image"><%= image_tag @category.image %></div>
-    <div class="content_header_category"><p><%= @category.description %></p></div>
-    <div style="clear: both"></div>
 
-  </div>
-<%= link_to "edit", edit_category_path, class:"atent"%>
+
+
       </div>
 
 

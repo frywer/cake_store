@@ -13,7 +13,17 @@
 //= require jquery
 //= require jquery_ujs
 //= require tinymce-jquery
+//= require bxslider
 //= require foundation
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+
+
+$(document).ready(function() {
+    $('.bxslider').bxSlider({
+        mode: 'fade',
+        captions: true
+    });
+});

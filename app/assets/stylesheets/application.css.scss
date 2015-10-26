@@ -11,8 +11,9 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require bxslider
  *= require_self
- /*= require foundation_and_overrides */
+/*= require foundation_and_overrides */
 
  */
 
@@ -137,7 +138,9 @@
 
         a:hover {
           text-decoration: underline;
-
+        }
+        ul{
+          z-index: 1;
 
         }
         height: 30px;
