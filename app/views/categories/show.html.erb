@@ -41,6 +41,7 @@
 
 
       <% sub_category.products.each do |product|%>
+            <%if product.product_image.exists?%>
         <%= link_to(product) do %>
             <div class="product_container">
               <div class="product_image_content"> <%= image_tag product.product_image.to_s  %></div>
@@ -49,36 +50,12 @@
             </div>
         <%end%>
         <%end%>
+            <%end%>
       </fieldset>
 
        <div style="clear: both"></div>
 
-          <%else%>
-          <% if session[:user_id] %>
-              <fieldset>
-                <legend>
-                  <a name="<%=sub_category.id%>"></a>
-                  <%= sub_category.title%>
-                </legend>
 
-                <% sub_category.products.each do |product|%>
-                <%= link_to(product) do %>
-                    <div class="product_container">
-                      <div class="product_image_content"> <%= image_tag product.product_image.to_s  %></div>
-                      <div class="short_bod"> <%= image_tag "sep.png"%></div>
-                      <h5 class="product_title_style"><%= product.title  %></h5>
-                    </div>
-                <%end%>
-
-
-            <%end%>
-          </fieldset>
-
-          <div style="clear: both"></div>
-
-
-
-          <%end %>
 <%end%>
 <%end%>
 
