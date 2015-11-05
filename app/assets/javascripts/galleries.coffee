@@ -4,7 +4,7 @@
 
 
 $(document).ready ->
-  $(".bxslider").bxSlider( auto: true, autoControls: true,)
+  $(".bxslider").bxSlider( auto: true)
 
 
 

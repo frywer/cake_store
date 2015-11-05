@@ -10,21 +10,12 @@
 </head>
  <body>
 
- <% if session[:user_id] %>
- <div class="admin_controller">
-   <ul>
-     <li><%=link_to "Добавить продукт", products_path%></li>
-     <li><%=link_to "Пользватели", users_path%></li>
-     <li><%=link_to "Категории", categories_path%></li>
-     <li><%= button_to 'Logout', logout_path, method: :delete %></li>
-   </ul>
- </div>
- <%end %>
+  <%= render("layouts/admin_menu")%>
 
 
-   <div id="banner">
-     <%= render :partial => 'store/header'%>
-   </div>
+
+     <%= render :partial => 'layouts/header'%>
+
 
 
 

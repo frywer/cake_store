@@ -1,3 +1,14 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
 
 <% if notice %>
     <p id="notice"><%= notice %></p>
@@ -6,26 +17,66 @@
 
 
 
-<!-- Warming Up -->
-<link href='http://fonts.googleapis.com/css?family=Buenard:700' rel='stylesheet' type='text/css'>
-<script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
+<div class="index_content" >
 
-<!--Video Section-->
-<!--Video Section-->
-<section class="content-section video-section">
-  <div class="pattern-overlay">
-    <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=uPA47phF0OU',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h1>Full Width Video</h1>
-          <h3>Enjoy Adding Full Screen Videos to your Page Sections</h3>
-        </div>
+  <%= video_tag "Shaboo.mp4", :size => "715x400", :controls => true , class: "video_shaboo"%>
+
+
+
+  <div class="menu_blog">
+
+
+
+
+    <div id="find_block">
+    <div class="row collapse">
+      <div class="large-9 small-10 columns">
+        <input type="text" placeholder="поиск..">
+      </div>
+      <div class="large-3 small-2 columns">
+        <%= link_to (image_tag"find_icon.png"), "#",class:"find_icon"%>
       </div>
     </div>
+    </div>
+
+    <div class="phone_contacts">
+      <%=image_tag("mobile-phone.png",class: "phone_number")%><h3><%=link_to "+373 69720697", static_pages_contacts_path %></h3>
+    </div>
+
+    <div id="social_s">
+
+      <%=link_to(image_tag("social_net2.png", class: "od"))%>
+      <%=link_to(image_tag("social_net3.png",class: "neod"))%>
+      <%=link_to(image_tag("social_net4.png",class: "neod"))%>
+      <%=link_to(image_tag("social_net5.png",class: "neod"))%>
+
+
+    </div>
+
+    <br>
+    <br>
+
+
+     <h5>WHO ARE WE?</h5>
+    <p>
+
+      We are Taste of Prague. Local foodies who love to eat, drink and talk and are happy to share our love with the guests of our wonderful Prague (not only) food-related tours and our cool rental apartment.
+    </p>
+    <div class="fb-page" data-href="https://www.facebook.com/shaboodessert/?fref=ts" data-width="270" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/shaboodessert/?fref=ts"><a href="https://www.facebook.com/shaboodessert/?fref=ts">Shaboo</a></blockquote></div></div>
+
+
+
+
+
+
+
+
+
+
   </div>
-</section>
-<!--Video Section Ends Here-->
-<!--Video Section Ends Here-->
+
+</div>
+
+
 
 <%= render "layouts/round_blocks"%>

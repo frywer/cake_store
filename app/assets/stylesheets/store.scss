@@ -31,89 +31,9 @@
 
 
 
-//slider//
 
 
 
-#slider {
-  height: 184px;
-  width: 877px;
-  overflow: hidden;
-  margin-left: 120px;
-  float: left;
-  margin-top: 4px;
-
-}
-#slider .slides{
-  list-style-type: none;
-  display: block;
-  width: 6000px;
-  height: 200px;
-  margin: 0;
-  //padding: 0;
-
-}
-
-#slider .slide {
-  //box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  float: left;
-  list-style-type: none;
-  width: 400px;
-  height: 180px;
-
-}
-.slide_2 {
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  float: left;
-  width: 475px;
-  height: 200px;
-  padding: 10px;
-  padding-left: 120px;
-
-}
-
-
-// slider //
-
-// left main menu block//
-
-
-#side {
-  display: block;
-  //border: solid 1px red;
-  //background: url("lenta_left_menu.png") ;
-  background-size: 250px ;
-  background-repeat: no-repeat;
-  float: left;
-  min-height: 500px;
-  width: 240px;
-
-
-
-  #face_book {
-    margin-left: 30px;
-    margin-top: 50px;
-  }
-
-
-
-
-
-  #cart {
-    font-size: smaller;
-    color: white;
-    table {
-      border-top: 1px dotted #595;
-      border-bottom: 1px dotted #595;
-      margin-bottom: 10px;
-
-    }
-  }
-}
-// left main menu block//
-
-
-// main  store_content//
 
 #store_content {
   
@@ -307,40 +227,51 @@
   }
 
 
-//===================Видео+++++++++++++++++
-
-
-
-  /* Incase of overlay problems just increase the min-height*/
-.video-section .pattern-overlay {
-  margin-top: 200px;
-  background-color: rgba(71, 71, 71, 0.59);
-  padding: 110px 0 32px;
-  min-height: 496px;
-  /* Incase of overlay problems just increase the min-height*/
+.index_header{
+  img{
+    width: 100%;
+  }
 }
-.video-section h1, .video-section h3{
-  text-align:center;
-  color:#fff;
-}
-.video-section h1{
-  font-size:110px;
-  font-family: 'Buenard', serif;
-  font-weight:bold;
-  text-transform: uppercase;
-  margin: 40px auto 0px;
-  text-shadow: 1px 1px 1px #000;
-  -webkit-text-shadow: 1px 1px 1px #000;
-  -moz-text-shadow: 1px 1px 1px #000;
-}
-.video-section h3{
-  font-size: 25px;
-  font-weight:lighter;
-  margin: 0px auto 15px;
-}
-.video-section .buttonBar{display:none;}
-.player {font-size: 1px;}
+.index_content{
+  min-height: 1000px;
+  border: solid 1px;
+  margin-top: 50px;
+
+  .video_shaboo{
+    float: left;
+  }
+
+  .menu_blog{
+    border: solid 1px;
+    width: 270px;
+    float: right;
+    height: 100%;
+  }
+ #find_block {
+   float: right;
+   width: 100%;
+
+   .find_icon {
+     img {
+       width: 35px;
+     }
+   }
+ }
 
 
+}
+.phone_contacts {
+
+  h3{
+    font-family: sladkoeshka;
+  }
+
+
+  .phone_number {
+    width: 40px;
+    float: left;
+  }
+
+}
 
 

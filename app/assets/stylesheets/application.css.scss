@@ -13,7 +13,7 @@
  *= require_tree .
  *= require bxslider
  *= require_self
-/*= require foundation_and_overrides */
+*= require foundation_and_overrides
 
  */
 
@@ -33,64 +33,32 @@
   color: #7f0d65;
 }
 // HEADER //
-#banner {
-  margin-top: 10px;
-  height: 120px;
-
-    #header_in{
-      width: 1000px;
-      margin: auto;
-
-      #main_slogan{
-        float: left;
-        width: 500px;
-        margin-left: 20px;
-        margin-top: 20px;
-      p{
-        line-height: 40px;
-        font-size: 22px;
-        font-family: Ubuntu-L;
-      }
-      }
-
-      #header_contacts{
-        width: 260px;
-        float: right;
-
-        #social_s{
-          img{
-            float: left;
-            width: 45px;
-            margin-left: 12px;
-          }
-        }
-
-        #phone_header_block{
-          img{
-            width: 45px;
-            margin-top: 5px;
-            float: left;
-          }
-
-          h2{
-            float: left;
-            font-family: sladkoeshka;
-          }
-        }
-      }
-    }
 
 
 
 
-  #logo_image {
-    width: 180px;
-    padding: 0;
-    float: left;
 
-   // position: absolute;
-  }
+ #social_s{
+   .neod{
+     width: 60px;
+     margin-left: 3px;
+   }
+   .od{
+     width: 63px;
+     //margin-left: 10px;
+   }
 
+ }
+
+
+#logo_image {
+  width: 180px;
+  padding: 0;
+  float: left;
+  position: absolute;
+  margin-top: -100px;
+
+  // position: absolute;
 }
 
 
@@ -100,129 +68,128 @@
 
 #lenta_menu {
 
-
   .main_menu {
     margin: auto;
-    border-top:  solid 3px rgba(127, 13, 101, 0.64);
+    border-top: solid 3px rgba(127, 13, 101, 0.64);
     border-radius: 5px;
     height: 43px;
     //float: left;
-    width: 1000px;
+    //width: 1000px;
 
     //shadow ------------
     //position:relative;
-    background:#fff;
-    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     //shadow ------------
 
-    #home_button {
-      font-size: 18px;
-      float: left;
-      margin: 0;
-      padding-top: 5px;
-      padding-left: 0px;
-      border: none !important;
-    }
+    #length_menu {
+      width: 1000px;
+      margin: auto;
 
-    #ddmenu {
-      color: #5b0466;
-      margin-top: 3px;
-      font-size: 14px;
-      margin-bottom: 0px !important;
-      margin-left: 10px;
-      margin-right: 20px;
-      list-style-type: none;
-      .limenu {
-
-        a:hover {
-          text-decoration: underline;
-        }
-        ul{
-          z-index: 1;
-
-        }
-        height: 30px;
-        float: right;
-        border-left: dashed 1px;
-        margin-left: 20px;
+      #home_button {
+        font-size: 18px;
+        float: left;
+        margin: 0;
         padding-top: 5px;
-        padding-left: 20px;
+        padding-left: 0px;
+        border: none !important;
+      }
+
+      #ddmenu {
+        color: #5b0466;
+        margin-top: 3px;
+        font-size: 14px;
+        margin-bottom: 0px !important;
+        margin-left: 10px;
+        margin-right: 20px;
+        list-style-type: none;
+        .limenu {
+
+          a:hover {
+            text-decoration: underline;
+          }
+          ul {
+            z-index: 1;
+
+          }
+          height: 30px;
+          float: right;
+          border-left: dashed 1px;
+          margin-left: 20px;
+          padding-top: 5px;
+          padding-left: 20px;
+        }
+
       }
 
     }
 
+    #ddmenu ul {
+      position: absolute;
+      //top: 158px;
+      min-width: 150px;
+      background: #fff;
+      display: none;
+      margin: 0;
+      padding: 7px 0;
+      list-style: none;
+      border-radius: 3px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
     }
 
-  #ddmenu ul{
-    position: absolute;
-    top: 158px;
-    min-width: 150px;
-    background: #fff;
-    display: none;
-    margin: 0;
-    padding: 7px 0;
-    list-style: none;
-    border-radius: 3px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    #ddmenu ul:after {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      bottom: 100%;
+      left: 8px;
+      border-width: 0 8px 8px 8px;
+      border-style: solid;
+      border-color: #fff transparent;
+    }
+    #ddmenu ul:before {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      bottom: 100%;
+      left: 4px;
+      border-width: 0 10px 10px 10px;
+      border-style: solid;
+      border-color: rgba(0, 0, 0, 0.1) transparent;
+    }
+
+    #ddmenu ul li {
+      display: block;
+      width: 100%;
+      font-size: 0.9em;
+      text-shadow: 1px 1px 0 #fff;
+
+    }
+
+    #ddmenu ul li a {
+      display: block;
+      width: 100%;
+      padding: 6px 7px;
+      line-height: 1.4em;
+      -webkit-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+
+    }
+    #ddmenu ul li a:hover {
+      background: #e9edf3;
+
+    }
 
   }
-
-
-
-  #ddmenu ul:after {
-    content: "";
-    width: 0;
-    height: 0;
-    position: absolute;
-    bottom: 100%;
-    left: 8px;
-    border-width: 0 8px 8px 8px;
-    border-style: solid;
-    border-color: #fff transparent;
-  }
-  #ddmenu ul:before {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  bottom: 100%;
-  left: 4px;
-  border-width: 0 10px 10px 10px;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.1) transparent;
 }
-
-  #ddmenu ul li {
-  display: block;
-  width: 100%;
-  font-size: 0.9em;
-  text-shadow: 1px 1px 0 #fff;
-
-}
-
-
-
-  #ddmenu ul li a {
-   display: block;
-   width: 100%;
-   padding: 6px 7px;
-   line-height: 1.4em;
-   -webkit-transition: all 0.2s linear;
-   -moz-transition: all 0.2s linear;
-   -o-transition: all 0.2s linear;
-   transition: all 0.2s linear;
-
-}
-  #ddmenu ul li a:hover {
-  background: #e9edf3;
-
-
-}
-
-  }
 
 
   .main_menu:after {
