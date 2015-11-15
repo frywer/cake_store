@@ -29,7 +29,9 @@
     <%@tweets.each do |tweet|%>
         <br>
         <h1 class="tweet_title"><%=tweet.title%></h1>
-        <%= image_tag tweet.image%>
+            <% if tweet.image.exists? %>
+               <%= image_tag tweet.image%>
+            <%end%>
         <%= tweet.content.html_safe%>
         <%end%>
 
