@@ -77,6 +77,8 @@ class PagesController < ApplicationController
     @cake_categories = CakeCategory.all
     @slides = Slide.all
     @categories = Category.all
+    @email_form = EmailForm.new
+    @tweets = Tweet.all
   end
 
 end

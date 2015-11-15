@@ -88,5 +88,7 @@ class CakeCategoriesController < ApplicationController
    def set_slide
      @slides = Slide.all
      @categories = Category.all
+     @email_form = EmailForm.new
+     @tweets = Tweet.all
    end
 end

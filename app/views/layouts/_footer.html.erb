@@ -1,2 +1,64 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
+
+
+
+<footer id="footer">
+
+  <div class="fds">
+    <div class="footer_info">
+      <%= image_tag"shaboo_logo_round.jpg", class: "logo_footer"%>
+      <div class="fb-page" data-href="https://www.facebook.com/shaboodessert/?ref=ts&amp;fref=ts" data-width="800" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/shaboodessert/?ref=ts&amp;fref=ts"><a href="https://www.facebook.com/shaboodessert/?ref=ts&amp;fref=ts">Shaboo</a></blockquote></div></div>
+    </div>
+
+    <div class="map_footer">
+
+      <div class="map_tweets">
+        <ul>
+          <h4>Наш Блог:</h4>
+          <% @tweets.each do |tweet| %>
+              <li><%=link_to tweet.title, tweet%></li>
+          <%end%>
+        </ul>
+      </div>
+
+      <div class="map_categories">
+
+        <h4>Категории:</h4>
+        <ul>
+          <% @categories.each do |category|%>
+              <li >
+                <%=link_to category.title, category%>
+                <ul class="ul_map">
+                  <% category.cake_categories.each do |sub_category|%>
+                      <li><%= link_to sub_category.title, category_path(sub_category.category, anchor: sub_category.id)  %></li>
+                  <%end%>
+                </ul>
+              </li>
+          <%end%>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="email_forms">
+    <%= image_tag("pen1.png")%>
+    <%= render "email_forms/form"%>
+  </div>
+</footer>
 

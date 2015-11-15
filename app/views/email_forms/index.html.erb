@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Email Forms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Subject</th>
+      <th>Message</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @email_forms.each do |email_form| %>
+      <tr>
+        <td><%= email_form.name %></td>
+        <td><%= email_form.email %></td>
+        <td><%= email_form.phone %></td>
+        <td><%= email_form.subject %></td>
+        <td><%= email_form.message %></td>
+        <td><%= link_to 'Show', email_form %></td>
+        <td><%= link_to 'Edit', edit_email_form_path(email_form) %></td>
+        <td><%= link_to 'Destroy', email_form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Email form', new_email_form_path %>

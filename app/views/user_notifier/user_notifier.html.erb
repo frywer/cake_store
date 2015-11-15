@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<style>
+  h3{
+      color: green;
+  }
+
+  p{
+
+      font-size: 17px;
+        }
+
+</style>
+<body>
+
+<h2>Hi! This is automatic email from <a href="http://shaboo.md/">"shaboo.md"</a> . You have a new message!</h2>
+<h3>Subject:</h3><%= @email_form.subject%>
+<h3>Name:</h3><%= @email_form.name%>
+<h3>Email:</h3><%= @email_form.email%>
+<h3>message:</h3><%=  @email_form.message%>
+
+
+
+</body>
+</html>

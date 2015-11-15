@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @email_form.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @email_form.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @email_form.phone %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @email_form.subject %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @email_form.message %>
+</p>
+
+<%= link_to 'Edit', edit_email_form_path(@email_form) %> |
+<%= link_to 'Back', email_forms_path %>

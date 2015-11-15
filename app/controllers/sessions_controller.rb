@@ -28,6 +28,8 @@ class SessionsController < ApplicationController
     @cake_categories = CakeCategory.all
     @categories = Category.all
     @slides = Slide.all
+    @email_form = EmailForm.new
+    @tweets = Tweet.all
   end
 
 end

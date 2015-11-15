@@ -1,0 +1,39 @@
+<%= form_for(@email_form) do |f| %>
+  <% if @email_form.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@email_form.errors.count, "error") %> prohibited this email_form from being saved:</h2>
+
+      <ul>
+      <% @email_form.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <div class="field_small">
+      <%= f.label :name, "Имя:*" %>
+      <%= f.text_field :name %>
+    </div>
+    <div class="field_small">
+      <%= f.label :email, "Майл:*" %>
+      <%= f.text_field :email %>
+    </div>
+    <div class="field_small">
+      <%= f.label :phone, "Телефон:*" %>
+      <%= f.text_field :phone %>
+    </div>
+    <div class="field_small">
+      <%= f.label :subject , "Тема:"%>
+      <%= f.text_field :subject %>
+    </div>
+    <div class="field_message">
+      <%= f.label :message, "Сообщение:*" %>
+      <%= f.text_area :message, rows: 8%>
+    </div>
+  <div class="actions_email_forms">
+    <%= recaptcha_tags %>
+    </div>
+    <%= f.submit "Отправить", class:"submit_button" %>
+
+<% end %>

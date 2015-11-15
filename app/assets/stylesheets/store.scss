@@ -29,10 +29,41 @@
   src: url("LT4a57cN.ttf");
 }
 
+@font-face {
+  font-family: "ProximaNova";
+  src: url("ProximaNova-Regular.otf");
+}
 
+@font-face {
+  font-family: "Adobe_Garamond_Pro";
+  src: url("Adobe_Garamond_Pro.ttf")
+}
 
+p{
+  font-family: Adobe_Garamond_Pro;
+  font-size: 18px;
+  line-height: 1.6em;
+  color: rgba(26, 26, 26, 0.7);
+}
 
-
+h1{
+  font-family: ProximaNova;
+}
+h2{
+  font-family: ProximaNova;
+}
+h3{
+  font-family: ProximaNova;
+}
+h4{
+  font-family: ProximaNova;
+}
+h5{
+  font-family: ProximaNova;
+}
+h6{
+  font-family: ProximaNova;
+}
 
 
 #store_content {
@@ -234,7 +265,7 @@
 }
 .index_content{
   min-height: 1000px;
-  border: solid 1px;
+  //border: solid 1px;
   margin-top: 50px;
 
   .video_shaboo{
@@ -242,10 +273,14 @@
   }
 
   .menu_blog{
-    border: solid 1px;
+    //border: solid 1px;
     width: 270px;
     float: right;
     height: 100%;
+
+    .editing_tweets{
+      color: red;
+    }
   }
  #find_block {
    float: right;
@@ -262,9 +297,7 @@
 }
 .phone_contacts {
 
-  h3{
-    font-family: sladkoeshka;
-  }
+
 
 
   .phone_number {
@@ -274,4 +307,125 @@
 
 }
 
+.store_index_content{
+  float: left;
+  max-width: 720px;
+  .tweet_title{
+    color: rgb(54, 212, 218);
+  }
+}
+
+//-----------------------------------------------footer---------------//
+footer {
+
+  border-top: solid 3px  ;
+  border-color: #7F0D65;
+  background: #777777;
+
+
+  //background-image: url("footer-background.gif");
+  width: 100%;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  .email_forms{
+
+    img{
+      width: 150px;
+      float: left;
+    }
+    label{
+      color: white;
+    }
+
+    float: right;
+    width: 400px;
+    margin-right: 30px;
+    //border: solid 1px;
+    .field_small {
+      margin-left: 178px;
+      width: 220px;
+    }
+
+    input{
+      height: 30px !important;
+      margin-bottom: 5px;
+    }
+    .actions_email_forms{
+      float: left;
+    }
+    .submit_button{
+      height: 50px;
+    }
+  }
+
+  .footer_info{
+    //border: solid 1px;
+    float: left;
+    width: 700px;
+
+
+
+    .logo_footer{
+      width: 140px;
+      float: left;
+      margin-right: 50px;
+
+    }
+  }
+
+  .map_footer{
+    //border: solid 1px;
+    width: 700px;
+    margin-top: 10px;
+
+    float: left;
+    max-height: 360px;
+
+  }
+
+  .fds{
+    width: 700px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 5px;
+
+    //border: solid 1px;
+  }
+  .map_tweets{
+
+    float: left;
+    max-width: 350px;
+    //border: solid 1px;
+    h4{
+      color: white;
+    }
+
+  }
+  .map_categories{
+    padding-left: 30px;
+    margin-left: 20px;
+    float: left;
+    border-left: solid 1px;
+    max-width: 350px;
+    h4{
+      color: white;
+    }
+
+
+
+    .ul_map{
+      margin-left: 20px;
+      list-style: none;
+
+    }
+  }
+
+  a{
+    color: white;
+  }
+
+}
+//-----------------------------------------------footer---------------//
 

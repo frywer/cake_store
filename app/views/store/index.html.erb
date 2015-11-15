@@ -19,7 +19,25 @@
 
 <div class="index_content" >
 
-  <%= video_tag "Shaboo.mp4", :size => "715x400", :controls => true , class: "video_shaboo"%>
+
+  <div class="store_index_content">
+    <%= video_tag "Shaboo.mp4", :size => "715x400", :controls => true , class: "video_shaboo"%>
+
+
+    <br>
+
+    <%@tweets.each do |tweet|%>
+        <br>
+        <h1 class="tweet_title"><%=tweet.title%></h1>
+        <%= image_tag tweet.image%>
+        <%= tweet.content.html_safe%>
+        <%end%>
+
+
+    <div style="clear: both"></div>
+  </div>
+
+
 
 
 
@@ -40,8 +58,11 @@
     </div>
 
     <div class="phone_contacts">
-      <%=image_tag("mobile-phone.png",class: "phone_number")%><h3><%=link_to "+373 69720697", static_pages_contacts_path %></h3>
+      <%=image_tag("mobile-phone.png",class: "phone_number")%><h3><%=link_to "+373 69720697", store_index_path(anchor:"footer")%></h3>
+      <%=link_to(image_tag("mail.png"), store_index_path(anchor:"footer"))%>
     </div>
+
+
 
     <div id="social_s">
 
@@ -52,9 +73,23 @@
 
 
     </div>
+    <br>
+
+    <h4>Наш Блог :</h4>
+    <ul>
+    <%@tweets.each do |tweet|%>
+          <li> <h5><%=link_to tweet.title, tweet%>
+            <% if session[:user_id] %>
+            <%= link_to ' delete', tweet, method: :delete, data: { confirm: 'Are you sure?' },class: "editing_tweets" %>
+            <%= link_to ' Edit', edit_tweet_path(tweet),class: "editing_tweets" %>
+            <%end%>
+          </h5></li>
+
+    <%end%>
+    </ul>
 
     <br>
-    <br>
+
 
 
      <h5>WHO ARE WE?</h5>
@@ -62,21 +97,11 @@
 
       We are Taste of Prague. Local foodies who love to eat, drink and talk and are happy to share our love with the guests of our wonderful Prague (not only) food-related tours and our cool rental apartment.
     </p>
+    <br>
     <div class="fb-page" data-href="https://www.facebook.com/shaboodessert/?fref=ts" data-width="270" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/shaboodessert/?fref=ts"><a href="https://www.facebook.com/shaboodessert/?fref=ts">Shaboo</a></blockquote></div></div>
-
-
-
-
-
-
-
-
-
-
   </div>
 
 </div>
 
 
 
-<%= render "layouts/round_blocks"%>
