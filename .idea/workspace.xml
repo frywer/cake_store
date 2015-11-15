@@ -2,198 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2c65c24-c25b-48c9-971e-5dc40f3d0037" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/Adobe_Garamond_Pro.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/Cake006.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/fonts/Lato-Light.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/fonts/Lato-LightItalic.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/fonts/Lato-Regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/fonts/Lato-RegularItalic.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/ProximaNova-Regular.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/fonts/SourceCodePro-Bold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/fonts/SourceCodePro-Regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/add.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/arrow_up.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/background-footer.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/brick.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/brick_link.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/bug.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/bullet_black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/bullet_toggle_minus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/bullet_toggle_plus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/cake-recipes.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/cakes.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/date.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/delete.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/find.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/footer-background.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/loadingAnimation.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/macFFBgHack.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/mail.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/js/navigation.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/package.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/page_green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/page_white_text.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/page_white_width.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/pen1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/pink-chocolate-cake_00440357.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/plugin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/ruby.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/js/search_index.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/js/searcher.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/tag_blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/tag_green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/transparent.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/wrench.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/wrench_orange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/images/zoom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20151105061226_create_tweets.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20151107054551_create_email_forms.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/CartsController/ActiveRecord.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/AdminController.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/AdminHelper.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/ApplicationController.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/ApplicationHelper.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/ApplicationMailer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/CakeCategoriesController.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/CakeCategoriesHelper.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/CakeCategory.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/Cart.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/CartsController.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/CartsHelper.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/CategoriesController.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/CategoriesHelper.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/Category.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/CurrentCart.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/EmailForm.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/EmailFormsController.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/EmailFormsHelper.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/GalleriesController.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/GalleriesHelper.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/Gallery.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/ImageStuffingCakesUploader.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/ImageUploader.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/LineItem.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/LineItemsController.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/LineItemsHelper.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/Object.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/Order.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/OrdersController.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/OrdersHelper.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/Page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/PagesController.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/PagesHelper.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/Painting.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/PaintingsController.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/PaintingsHelper.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/Product.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/ProductImageUploader.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/ProductsController.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/ProductsHelper.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/README_rdoc.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/SessionsController.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/SessionsHelper.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/Slide.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/SlideImageUploader.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/SlidesController.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/SlidesHelper.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/StaticPagesController.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/StaticPagesHelper.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/StoreController.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/StoreHelper.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/StuffingCake.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/StuffingCakesController.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/StuffingCakesHelper.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/Tweet.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/TweetsController.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/TweetsHelper.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/User.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/UserNotifier.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/UsersController.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/UsersHelper.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/email_forms/_form.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tweets/_form.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/mailers/application_mailer.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/created.rid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/js/darkfish.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/email_forms/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tweets/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/views/email_forms/edit.html.erb_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/views/tweets/edit.html.erb_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/email_form.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/models/email_form_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/email_forms.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/email_forms.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/email_forms_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/controllers/email_forms_controller_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/email_forms_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/helpers/email_forms_helper_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/routing/email_forms_routing_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/requests/email_forms_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/css/fonts.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/email_forms/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tweets/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/views/email_forms/index.html.erb_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/views/tweets/index.html.erb_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/email_forms/index.json.jbuilder" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tweets/index.json.jbuilder" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/js/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/mailer.text.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/js/navigation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/email_forms/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tweets/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/views/email_forms/new.html.erb_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/views/tweets/new.html.erb_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/css/rdoc.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/recaptcha.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/js/search.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/js/search_index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/js/searcher.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/email_forms/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tweets/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/views/email_forms/show.html.erb_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/views/tweets/show.html.erb_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/email_forms/show.json.jbuilder" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/tweets/show.json.jbuilder" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/app/table_of_contents.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/tweet.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/models/tweet_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/tweets.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/tweets.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/tweets_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/controllers/tweets_controller_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/tweets_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/helpers/tweets_helper_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/routing/tweets_routing_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/requests/tweets_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/user_notifier/user_notifier.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/mailers/user_notifier.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/mailers/previews/user_notifier_preview.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/mailers/user_notifier_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_admin_menu.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_admin_menu.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_main_menu_lenta.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_main_menu_lenta.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/admin.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/admin.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/admin_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/admin_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/cake_categories_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/cake_categories_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/cake_store.iml" afterPath="$PROJECT_DIR$/.idea/cake_store.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/categories_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/categories_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/store/index.html.erb" afterPath="$PROJECT_DIR$/app/views/store/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/products_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/products_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/store.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/store.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/store_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/store_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cake_store.iws" />
@@ -219,21 +28,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/store/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9489051">
-              <caret line="60" column="127" selection-start-line="60" selection-start-column="127" selection-end-line="60" selection-end-column="127" />
+            <state vertical-scroll-proportion="2.5">
+              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_main_menu_lenta.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_main_menu_lenta.html.erb">
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.5">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state vertical-scroll-proportion="-13.375">
+              <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_footer.html.erb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.270073">
+              <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="store.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/store.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.166667">
+              <caret line="410" column="6" selection-start-line="410" selection-start-column="6" selection-end-line="410" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -291,13 +120,13 @@
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/store.scss" />
         <option value="$PROJECT_DIR$/app/models/tweet.rb" />
         <option value="$PROJECT_DIR$/app/views/tweets/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/store_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/store/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_main_menu_lenta.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
       </list>
     </option>
   </component>
@@ -372,28 +201,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cake_store" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shaboo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="store" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1016,14 +823,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/cake_categories/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1036,22 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37388194">
           <caret line="54" column="11" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/store.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.875">
-          <caret line="368" column="0" selection-start-line="368" selection-start-column="0" selection-end-line="368" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1096,18 +879,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_main_menu_lenta.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/store/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="2.5">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/store/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/categories/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9489051">
-          <caret line="60" column="127" selection-start-line="60" selection-start-column="127" selection-end-line="60" selection-end-column="127" />
+        <state vertical-scroll-proportion="-13.375">
+          <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_main_menu_lenta.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54744524">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/store.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.166667">
+          <caret line="410" column="6" selection-start-line="410" selection-start-column="6" selection-end-line="410" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.270073">
+          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
           <folding />
         </state>
       </provider>
