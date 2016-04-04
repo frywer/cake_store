@@ -15,3 +15,7 @@
 /log/*
 !/log/.keep
 /tmp
+
+# Ignore all yml and tempfiles.
+/config/dropbox.yml
+/config/secrets.yml
