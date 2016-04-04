@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20151115013948) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.integer  "category_id"
+
   end
 
   add_index "cake_categories", ["category_id"], name: "index_cake_categories_on_category_id"
